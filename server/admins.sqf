@@ -4,8 +4,13 @@ if(!X_Server) exitWith {};
 moderators = []; 
 publicVariable "moderators"; 
            
-administrators = [];
+administrators = [
+    "6010118",		// Grezvany13
+	"62069382",		// Imprezzion
+];
 publicVariable "administrators";
 
-serverAdministrators = []; 
+serverAdministrators = [
+	"59582150"		// Duria
+]; 
 publicVariable "serverAdministrators";
