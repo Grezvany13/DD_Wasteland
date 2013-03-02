@@ -53,6 +53,7 @@ waituntil {!(IsNull (findDisplay 46))};
 //client Executes
 [] execVM "client\functions\initSurvival.sqf";
 [] execVM "client\systems\hud\playerHud.sqf";
+[] execVM "client\functions\twsremove.sqf";
 [] execVM "client\functions\createTownMarkers.sqf";
 [] execVM "client\functions\createGunStoreMarkers.sqf";
 [] execVM "client\functions\createGeneralStoreMarkers.sqf";
