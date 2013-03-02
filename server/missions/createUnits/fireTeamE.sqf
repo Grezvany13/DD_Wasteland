@@ -11,7 +11,7 @@ _group = _this select 0;
 _pos = _this select 1;
 
 //Leader (Sniper)
-_leader = _group createUnit ["Villager1", [(_pos select 0) + 1, (_pos select 1) - 2, 0], [], 0, "FORM"];
+_leader = _group createUnit ["GER_Soldier_TL_EP1", [(_pos select 0) + 1, (_pos select 1) - 2, 0], [], 0, "FORM"];
 _leader addMagazine "20Rnd_762x51_DMR";
 _leader addMagazine "20Rnd_762x51_DMR";
 _leader addMagazine "20Rnd_762x51_DMR";
@@ -25,7 +25,7 @@ _leader addMagazine "HandGrenade_West";
 _leader addWeapon "DMR";
 
 //Rifleman
-_man2 = _group createUnit ["Villager2", [(_pos select 0) + 1, (_pos select 1) - 3, 0], [], 0, "FORM"];
+_man2 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 1, (_pos select 1) - 3, 0], [], 0, "FORM"];
 _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addMagazine "30Rnd_556x45_Stanag";
@@ -36,7 +36,7 @@ _man2 addMagazine "1Rnd_Smoke_M203";
 _man2 addWeapon "SCAR_L_CQC_EGLM_Holo";
 
 //Rifleman
-_man3 = _group createUnit ["Villager3", [(_pos select 0) + 1, (_pos select 1) - 4, 0], [], 0, "FORM"];
+_man3 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 1, (_pos select 1) - 4, 0], [], 0, "FORM"];
 _man3 addMagazine "20Rnd_762x51_B_SCAR";
 _man3 addMagazine "20Rnd_762x51_B_SCAR";
 _man3 addMagazine "20Rnd_762x51_B_SCAR";
@@ -47,7 +47,7 @@ _man3 addMagazine "1Rnd_Smoke_M203";
 _man3 addWeapon "SCAR_H_STD_EGLM_Spect";
 
 //Rifleman
-_man4 = _group createUnit ["Villager4", [(_pos select 0) + 1, (_pos select 1) - 5, 0], [], 0, "FORM"];
+_man4 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 1, (_pos select 1) - 5, 0], [], 0, "FORM"];
 _man4 addMagazine "20Rnd_762x51_B_SCAR";
 _man4 addMagazine "20Rnd_762x51_B_SCAR";
 _man4 addMagazine "20Rnd_762x51_B_SCAR";
@@ -59,7 +59,7 @@ _man4 addMagazine "HandGrenade_West";
 _man4 addWeapon "SCAR_H_CQC_CCO";
 
 //Support
-_man5 = _group createUnit ["TK_CIV_Takistani02_EP1", [(_pos select 0) + 1, (_pos select 1) - 6, 0], [], 0, "FORM"];
+_man5 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 1, (_pos select 1) - 6, 0], [], 0, "FORM"];
 _man5 addMagazine "100Rnd_762x51_M240";
 _man5 addMagazine "100Rnd_762x51_M240";
 _man5 addMagazine "100Rnd_762x51_M240";
