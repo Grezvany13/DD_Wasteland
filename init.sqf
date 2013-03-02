@@ -59,3 +59,11 @@ if(X_Server) then {
 [] execVM "addons\proving_Ground\init.sqf";
 [0.1, 0.5, 0.5] execVM "addons\scripts\DynamicWeatherEffects.sqf";
 call compile preprocessFileLineNumbers "addons\scripts\Init_UPSMON.sqf";
+
+if (!(isNull player)) then {
+	gc_veh_flip_script_script_action_manager = execVM pathAddons+"gc_veh_flip\action_manager.sqf";
+};
+if (!isServer && isNull player) then {
+	waitUntil {!isNull player};
+	gc_veh_flip_script_script_action_manager = execVM pathAddons+"gc_veh_flip\action_manager.sqf";
+};
