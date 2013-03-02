@@ -42,7 +42,7 @@ player addEventHandler ["Killed", {[_this] call onKilled;}];
 
 gc_sec_pri_wpn_script_active = false;
 gc_sec_pri_wpn_stored_weapon = "NONE";
-gc_sec_pri_wpn_act_manager_script = execVM "scripts\gc_sec_pri_wpn\action_manager.sqf";
+gc_sec_pri_wpn_act_manager_script = execVM "client\scripts\gc_sec_pri_wpn\action_manager.sqf";
 
 
 //Setup Key Handler
