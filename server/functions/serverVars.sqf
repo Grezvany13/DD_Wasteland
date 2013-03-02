@@ -235,3 +235,26 @@ MissionSpawnMarkers = [
             ["Mission_49",false],
             ["Mission_50",false]
 ];
+CarrierMarkers = [
+            ["carrier_1", false],
+            ["carrier_2", false],
+            ["carrier_3", false],
+            ["carrier_4", false],
+            ["carrier_5", false],
+            ["carrier_6", false],
+            ["carrier_7", false],
+            ["carrier_8", false],
+            ["carrier_9", false],
+            ["carrier_10", false],
+            ["carrier_11", false],
+            ["carrier_12", false],
+            ["carrier_13", false],
+            ["carrier_14", false],
+            ["carrier_15", false],
+            ["carrier_16", false],
+            ["carrier_17", false],
+            ["carrier_18", false],
+            ["carrier_19", false],
+            ["carrier_20", false],
+            ["carrier_21", false]
+];
