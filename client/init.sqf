@@ -40,6 +40,11 @@ player addEventHandler ["Killed", {[_this] call onKilled;}];
 //Setup player menu scroll action.
 [] execVM "client\clientEvents\onMouseWheel.sqf";
 
+gc_sec_pri_wpn_script_active = false;
+gc_sec_pri_wpn_stored_weapon = "NONE";
+gc_sec_pri_wpn_act_manager_script = execVM "scripts\gc_sec_pri_wpn\action_manager.sqf";
+
+
 //Setup Key Handler
 waituntil {!(IsNull (findDisplay 46))};
 (findDisplay 46) displaySetEventHandler ["KeyDown", "_this call onKeyPress"];
