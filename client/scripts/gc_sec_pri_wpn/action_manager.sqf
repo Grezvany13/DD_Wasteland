@@ -33,7 +33,7 @@ while {local player} do
 		if (_switch_weapon_act_id == 9999) then 
 			{
 			// action is not added, add it.
-			_switch_weapon_act_id = player addaction ["Switch Weapon", "scripts\gc_sec_pri_wpn\switch_weapon.sqf", "", 0, false, true, "", ""];
+			_switch_weapon_act_id = player addaction ["Switch Weapon", "client\scripts\gc_sec_pri_wpn\switch_weapon.sqf", "", 0, false, true, "", ""];
 			};
 		};
 	// check conditions to remove action and reset spare rifle..
