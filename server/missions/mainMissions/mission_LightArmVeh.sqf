@@ -34,7 +34,7 @@ diag_log format["WASTELAND SERVER - Main Mission Resumed: %1",_missionType];
 
 [_missionMarkerName,_randomPos,_missionType] call createClientMarker;
 
-_vehicleClass = ["BTR40_MG_TK_GUE_EP1","GAZ_Vodnik_HMG","GAZ_Vodnik","BRDM2_HQ_TK_GUE_EP1","BRDM2_TK_GUE_EP1"] call BIS_fnc_selectRandom;
+_vehicleClass = ["Ural_ZU23_CDF","Ural_ZU23_Gue","Ural_ZU23_INS","Ural_ZU23_TK_EP1","BTR40_MG_TK_GUE_EP1","GAZ_Vodnik_HMG","GAZ_Vodnik","BRDM2_HQ_TK_GUE_EP1","BRDM2_TK_GUE_EP1","LAV25_HQ","BTR90_HQ"] call BIS_fnc_selectRandom;
 
 //Vehicle Class, Posistion, Fuel, Ammo, Damage
 _vehicle = [_vehicleClass,_randomPos,0.1,1,0.75,"NONE"] call createMissionVehicle;

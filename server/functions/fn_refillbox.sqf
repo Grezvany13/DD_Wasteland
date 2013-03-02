@@ -23,10 +23,10 @@ switch(_selectedBox) do {
 		_currBox addWeaponCargoGlobal ["M14_EP1",1];			
 		_currBox addWeaponCargoGlobal ["BAF_L7A2_GPMG",1];
         _currBox addWeaponCargoGlobal ["BAF_L110A1_Aim",1];
-		_currBox addWeaponCargoGlobal ["BAF_L85A2_RIS_CWS",1];
+		_currBox addWeaponCargoGlobal ["G36_C_SD_camo",1];
         _currBox addWeaponCargoGlobal ["BAF_L85A2_RIS_Holo",1];
         _currBox addWeaponCargoGlobal ["BAF_L85A2_UGL_Holo",1];		
-		_currBox addWeaponCargoGlobal ["FN_FAL_ANPVS4",1];
+		_currBox addWeaponCargoGlobal ["FN_FAL",1];
 		_currBox addWeaponCargoGlobal ["M9",4];	 
         _currBox addWeaponCargoGlobal ["M9SD",2];
         
