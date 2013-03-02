@@ -34,8 +34,18 @@ _man2 addMagazine "HandGrenade_West";
 _man2 addMagazine "HandGrenade_West";
 _man2 addWeapon "M8_compact";
 
+//Rifleman
+_man3 = _group createUnit ["CZ_Soldier_Pilot_EP1", [(_pos select 0) + 2, (_pos select 1) - 2, 0], [], 0, "FORM"];
+_man3 addMagazine "30Rnd_556x45_Stanag";
+_man3 addMagazine "30Rnd_556x45_Stanag";
+_man3 addMagazine "30Rnd_556x45_Stanag";
+_man3 addMagazine "30Rnd_556x45_Stanag";
+_man3 addMagazine "HandGrenade_West";
+_man3 addMagazine "HandGrenade_West";
+_man3 addWeapon "M8_compact";
+
 //Random vehicle
-_randomVehicle = ["AH1Z", "AH64D", "Mi24_P"] call BIS_fnc_selectRandom;
+_randomVehicle = ["Mi171Sh_CZ_EP1", "Mi17_UN_CDF_EP1", "UH1H_TK_GUE_EP1", "MH60S", "UH1Y"] call BIS_fnc_selectRandom;
 _vehicle = createVehicle [_randomVehicle, [(_pos select 0) + 20, (_pos select 1) + 20, 0], [], 0, "FORM"];
 _vehicle setVehicleInit "this addAction [('<t color=''#00EEFF''>') + ('HALO Jump') + '</t>','addons\haloJump\haloJump.sqf',[],7,false,true,'','player in _target']";
 processInitCommands;
@@ -51,6 +61,11 @@ _man2 assignAsGunner _vehicle;
 [_man2] orderGetIn true;
 sleep 0.2;
 _man2 moveInGunner _vehicle;
+
+_man3 assignAsGunner _vehicle;
+[_man3] orderGetIn true;
+sleep 0.2;
+_man3 moveInGunner _vehicle;
 
 
 _leader setVehicleInit "null = [this,'UPS','nowait'] execVM 'addons\scripts\UPSMON.sqf'";

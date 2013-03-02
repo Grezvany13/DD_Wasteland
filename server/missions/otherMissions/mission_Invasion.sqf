@@ -91,7 +91,7 @@ _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>I
 [nil,nil,rHINT,_hint] call RE;
 
 //Random vehicle reward
-_randomVehicle = ["BAF_Apache_AH1_D", "AW159_Lynx_BAF", "AH6J_EP1", "M1A1_US_DES_EP1", "BAF_FV510_W", "M1A2_US_TUSK_MG_EP1", "MtvrReammo", "MtvrRefuel", "MtvrRepair"] call BIS_fnc_selectRandom;
+_randomVehicle = ["AH64D_Sidewinders", "AW159_Lynx_BAF", "AH6J_EP1", "M1A1_US_DES_EP1", "BAF_FV510_W", "M1A2_US_TUSK_MG_EP1", "T90", "BMP3", "2S6M_Tunguska"] call BIS_fnc_selectRandom;
 _vehicle = createVehicle [_randomVehicle, [(_randomPos select 0) - 10, (_randomPos select 1), 0], [], 0, "NONE"];
 
 if (_vehicle isKindOf "Air") then
