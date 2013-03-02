@@ -32,30 +32,4 @@ while {_counter < 8} do // 8 helis spawn at the beginning
     _countActual = _countActual + 1;
 };
 
-//{diag_log format["Heli %1 = %2",_forEachIndex, _x];} forEach currentStaticHelis;
-
-for "_i" from 1 to 24 do {
-    _doSpawnWreck = true;
-    
-    { // Check if current iteration already exists as a live heli...
-    	if (_i == _x) then {
-			_doSpawnWreck = false;
-        };
-    } forEach currentStaticHelis;
-    
-    if (_doSpawnWreck) then {
-    	_position = getMarkerPos format ["heliSpawn_%1", _i];
-    	_newPos = [_position, 25, 50, 1, 0, 60 * (pi / 180), 0] call BIS_fnc_findSafePos;
-		[1, _newPos] call staticHeliCreation;
-        
-        /*
-    	_markerName = format["marker%1",_i];
-		_marker = createMarker [_markerName, _newPos];
-		_marker setMarkerType "dot";
-		_marker setMarkerSize [1.25, 1.25];
-		_marker setMarkerColor "ColorBlue";
-        */
-    };
-};
-
 diag_log format["WASTELAND SERVER - %1 Static helis Spawned",_countActual];
