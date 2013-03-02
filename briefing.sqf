@@ -60,6 +60,11 @@ player createDiaryRecord [
 		Madbull - R3F log and arty<br/>
 		conKORD - Proving grounds<br/>
 		HeliJunkie - ConfigExplorer<br/>
+		<br/>
+		Double Dutch Clan Developers:<br/><br/>
+		DreamRebel - Script & mission changes<br/>
+		Grezvany13 - Script changes<br/>
+		Waxdt 	   - Major mission changes<br/>
 		"
 	]
 ];
