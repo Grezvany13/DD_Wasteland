@@ -1,287 +1,91 @@
-player createDiarySubject ["404games", "404Games Information"];
-player createDiarySubject ["changelog", "404Games Change Log"];
-player createDiarySubject ["wasteland", "What is Wasteland?"];
+player createDiarySubject ["dd",		"We are Double Dutch!"];
+player createDiarySubject ["info",		"Information"];
+player createDiarySubject ["wasteland",	"What is Wasteland?"];
 
-player createDiaryRecord["changelog",
+player createDiaryRecord["dd",
 [
-"0.1",
-"
+	"Server Rules",
+	"
 <br/>
-		[Fixed] - Server performance issues.<br/>
-		[Fixed] - Vehicle cleanup.<br/>
-		[Fixed] - Team locking time which is actually 3 mins now.<br/>
-"
+	1. We play for fun and hopefully you too! So keep nice to each other and have a good time.<br/>
+	If you see enemies building their base, be a nice guy and let them build without interfering.<br/>
+	Ofcourse, if they become a threat to you don't hold back to have a good and fair fight!.
+<br/>
+	2. Keep the in-game chat clean and don't abuse the voice chat.<br/>
+	The admins are very strict and will kick you without warning.<br/>
+<br/>
+	3. It's not allowed to crash vehicles into other players or bases. We've got weapons for that.<br/>
+<br/>
+	4. If you got banished from a team (BLUFOR or OPFOR) and forced to play INDEPENDENT, or want to switch teams, you're in bad luck. The admins will not help you with your mistakes.<br/>
+<br/>
+	5. If you're teamed up, work together as a team. If you take gear from your teams base, give something in return too. Not only is playing together more fun, but also more rewarding when a coordinated attack is successful.<br/>
+<br/>
+	6. The admins rule the server and their decision is always final. If they kill, kick or ban someone from the server, they'll have a good reason for it. Don't discuss the admins decision in-game, but go to www.doubledutchclan.nl and file a complain there.<br/>
+<br/>
+    7. Only speak/chat Dutch or English only. Doing otherwise might get you kicked.<br/>
+<br/>
+	"
 ]
 ];
 
-player createDiaryRecord["changelog",
+player createDiaryRecord["dd",
 [
-"2.1",
-"
+	"Who are we?",
+	"
 <br/>
-		[Added] - Towing Limit Now Set to 1 Vehicle and Cars can Tow<br/>
-		[Added] - Some Static Helis<br/>
-		[Added] - Spawn Beacons<br/>
-		[Added] - Client Markers<br/>
-		[Added] - Outpost Mission<br/>
-		[Added] - Concurrent Missions<br/>
-		[Added] - Welcome Message<br/>
-		[Added] - Admin Levels<br/>
-		[Added] - More Ammo Types<br/>
-		[Added] - More Player Roles, Now 120 Total<br/>
-		[Changed] - Object List to have more Objects<br/>
-		[Changed] - Balanced Mission Ammo Caches<br/>
-		[Changed] - Faction Starting Pistols now more appropriate<br/>
-		[Changed] - Missions Rewriten to Address Multiple Bugs<br/>
-		[Redesigned] - Gun Store<br/>
-		[Redesigned] - General Store<br/>
-		[Fixed] - Animation not working correctly<br/>
-		[Fixed] - Money Drop Bug and Exploit<br/>
-		[Fixed] - JIP Loading Bug<br/>
-		[Fixed] - AI Running to Other Mission<br/>
-		[Fixed] - Numerous minor bugs and tweeks<br/>  
-"
+	We are Double Dutch!<br/><br/>
+	The Double Dutch Clan is the largest and most active Dutch fun gaming clan in the world.<br/>
+	With over 600 active members and playing almost every game on the market we dare to say that you won't find anything like us.<br/>
+<br/>
+	Our main objective is to have fun while gaming, but you can also play seriously and even professionally.<br/>
+<br/>
+	We're always looking for new members to play with and signup is always open.<br/>
+	So, if you're 16 years or older, speak Dutch and like to play with other people, check our website at www.doubledutchclan.nl and join us!<br?
+	"
 ]
 ];
 
-player createDiaryRecord["changelog",
-[
-"2.2",
-"
-<br/>
-		[Added] - Body Clean Up after a short period.<br/>
-		[Added] - Mobile Radar Station Mission.<br/>
-		[Changed] - Vehicle Clean made less aggressive.<br/>
-"
-]
+player createDiaryRecord [
+	"info",
+	[
+		"Wasteland mission",
+		"TAW_Tonic - Original Creator<br/>
+		Sa-Matra - Massive improvements that changed Wasteland for the better<br/>
+		Marker - Some great improvements and code.<br/>
+		404Games - For wasteland version 2.7 which this version is based upon<br/>
+		Melbo/OCUK - Testing and ideas<br/>
+		Engima - Dynamic weather effects<br/>
+		Celery - CLY remove dead<br/>
+		General Carver - Vehicle flip<br/>
+		Madbull - R3F log and arty<br/>
+		conKORD - Proving grounds<br/>
+		HeliJunkie - ConfigExplorer<br/>
+		"
+	]
 ];
 
-player createDiaryRecord["changelog",
-[
-"2.2b",
-"
-<br/>
-		[Changed] - Server Spawning Less Aggressive.<br/>
-"
-]
+player createDiaryRecord[
+	"info",
+	[
+		"Bug and Cheat Reporting",
+		"<br/>
+		Found a bug? Please report it at: http://www.404games.co.uk/bugs<br/><br/>
+		Suspect a player is hacking or exploiting? Please report it at: http://www.doubledutchclan.nl/<br/><br/>
+		Please remeber this game-mode is in continuous development and there will be bugs. 
+		"
+	]
 ];
 
-player createDiaryRecord["changelog",
-[
-"2.3",
-"
-<br/>
-		[Fixed] - Drinking and Eating While in the car animation.<br/>
-        [Fixed] - Other minor bugs.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"2.4",
-"
-<br/>
-		[Added] - Three new objects.<br/>
-		[Added] - More anti hack for vehicles.<br/>
-		[Added] - Check to make sure missions don't pop up in the same place.<br/>
-		[Added] - Static Boats.<br/>
-		[Changed] - Increased length of welcome message.<br/>
-		[Changed] - Mission failover to 60 mins.<br/>
-		[Changed] - Increased delay for body clean up to 15 mins.<br/>
-		[Fixed] - Vehicle respawn script.<br/>
-		[Removed] - Some debuging.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"2.5",
-"
-<br/>
-		[Added] - Default weapon crates have been nerfed and more gun variations added.<br/>
-		[Added] - Static helis now spawn in random locations.<br/>
-		[Added] - When a static heli fails to spawn, a wreck is spawned instead.<br/>
-		[Added] - Cammo nets have been added to the general store.<br/>
-		[Fixed] - Players are now able to buy LMG's at the gun store.<br/>
-		[Fixed] - Weapons now have varying sell prices relative to gun cost.<br/>
-		[Fixed] - When buying a full jerry can, the empty one is automatically removed from player inventory.<br/>
-		[Changed] - Various balance and price tweaks made to stores.<br/>
-		[Changed] - Chernarus is now in summer time. Longer days to be had by all.<br/>
-		[Changed] - Player starting money reduced to $100.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"2.6",
-"
-<br/>
-		[Added] - Groups.<br/>
-        [Added] - Body and Object clean up.<br/>
-		[Added] - Static helis now spawn in random locations.<br/>
-		[Added] - Default weapon crates have been nerfed and more gun variations added.<br/>
-		[Added] - When a static heli fails to spawn, a wreck is spawned instead.<br/>
-		[Added] - Player Tags thanks to [OcUK]Melbo.<br/>
-		[Added] - Yellow tint, falling ash and dust for wasteland.<br/>
-		[Added] - Cammo nets have been added to the general store.<br/>
-        [Fixed] - Fix vehicle cleanup and respawn.<br/>
-		[Fixed] - Players are now able to buy LMG's at the gun store.<br/>
-		[Fixed] - Weapons now have varying sell prices relative to gun cost.<br/>
-		[Fixed] - When buying a full jerry can, the empty one is automatically removed from player inventory.<br/>
-		[Changed] - Town marker procedural generation optimised for reduced start-up lag.<br/>
-		[Changed] - Admin menu can now remove player teamlock and teamkiller, also added a three tier permission system for greater flexibility.<br/>
-		[Changed] - Player starting money reduced to $100.<br/>
-		[Changed] - Various balance and price tweaks made to stores.<br/>
-		[Changed] - Chernarus is now in summer time. Longer days to be had by all.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"2.6 Dev3",
-"
-<br/>
-		[Fixed] - Flickering Icons.<br/>
-		[Fixed] - Spawning with guns.<br/>
-		[Fixed] - Spawning in a group.<br/>
-		[Changed] - Removed Green Icons From Groups.<br/>
-"
-]
-];
-player createDiaryRecord["changelog",
-[
-"2.7",
-"
-<br/>
-		[Added] - Better player join flow.<br/>
-		[Added] - Independent groups now have icons back.<br/>
-		[Fixed] - Disapearing icons on players who have been alive a long time.<br/>
-		[Fixed] - Player Setup and Initialization.<br/>
-		[Fixed] - Joining with a group.<br/>
-		[Fixed] - Feedback messages missing.<br/>
-        [Fixed] - Money dupe.<br/>
-		[Changed] - Time Sync to just sync time and not accelerate it.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"2.8",
-"
-<br/>
-		[Added] - When spawning on a spawn beacon, you come in via HALO jump.<br/>
-		[Added] - New store interaction system.<br/>
-		[Added] - Supply drop mission written by OCUK MarKeR and tweaked by 404Games.<br/>
-		[Added] - Lots of new mission spawn locations.<br/>
-		[Fixed] - Floating crates/objects sometimes appearing above Novy.<br/>
-		[Fixed] - AI Team defend script. Be careful, they now actually use their mounted weapons!<br/>
-		[Fixed] - Vehicles no longer spawn in silly places / silly angles.<br/>
-		[Fixed] - Not able to interact with stores sometimes.<br/>
-		[Fixed] - Outpost having overpowered weapons.<br/>
-		[Fixed] - Other misc fixes that have been mentioned on the forums, Thanks for your help!<br/>
-		[Improved] - Vehicle HUD to now show the players respective role within the vehicle.<br/>
-		[Improved] - Mission spawning system thanks to Kettlewell.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"2.8a",
-"
-<br/>
-		[Fixed] - AI getting into mission vehicles.<br/>
-		[Fixed] - Fixed some issues with missions.<br/>
-		[Fixed] - Added in some defines for missions to easily edit the times.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"2.9",
-"
-<br/>
-		[Added] - Most interactions have a Cancel Action option now.<br/>
-		[Fixed] - Abandoned Truck showing up as recon vehicle.<br/>
-		[Fixed] - Object lock now functions correctly.<br/>
-		[Fixed] - Spawn beacon, radar, object etc unlock/lock actions now stop on death.<br/>    
-		[Fixed] - The mission RPT errors.<br/>
-		[Fixed] - The vehicle count RPT error.<br/>
-		[Fixed] - mission_Outpost timeout.<br/>
-		[Changed] - Gun and General stores no longer have over-powered super radars.<br/>
-		[Changed] - Player now starts with only 1x food and water.<br/>
-		[Changed] - Added more variation to vehicle weapons spawns and removed OP weapons.<br/>
-		[Enhancement] - Refuel and Repair vehicle functions have been improved.<br/>
-		[Enhancement] - The mission RPT's to have more information to help with debuging.<br/>
-		[Enhancement] - Server startup optimizations.<br/>
-		[Enhancement] - General mission optimizations; many changes to improve performance.<br/>
-		[Enhancement] - Made some changes to defend area to make the AI more aware.<br/>
-		[Enhancement] - The mission system is now all pre compiled and steamlined to make it run smoother.<br/>
-		[Enhancement] - Mission will no longer run the same one twice.<br/>  
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"2.9b",
-"
-<br/>
-		[Fixed] - Fuel Cans not refilling.<br/>
-		[Fixed] - Deer Stand Flying.<br/>
-		[Fixed] - No limit on gunstore ammo.<br/>
-		[Fixed] - Supply Drop Mission Food Stand.<br/>
-		[Could Not Recrate] - The Mission_LightArmVeh Mission is not spawning the BTR40_MG_TK_GUE_EP1.<br/>
-		[Could Not Recrate] - Arma2Net version of 2.9a has got a problem with the groups system.<br/>
-		Could Not Recrate] - Teamkill Message Not Working.<br/>
-"
-]
-];
-
-player createDiaryRecord["404games",
-[
-"Credits",
-"
-<br/>
-	Contributors:<br/><br/>
-	Credit to Tonic for original game-mode creation.<br/><br/>
-	404 Developers:<br/><br/>
-	Developer - Deadbeat<br/>
-	Developer - Costlyy<br/>
-    Developer - Pulse<br/>
-	Server Host - Domuk<br/>
-"
-]
-];
-
-player createDiaryRecord["404games",
-[
-"Bug and Cheat Reporting",
-"
-<br/>
-	Found a bug? Please report it at: http://www.404games.co.uk/bugs<br/><br/>
-	Suspect a player is hacking or exploiting? Please report it at: http://www.404games.co.uk/bans<br/><br/>
-	Please remeber this game-mode is in continuous development and there will be bugs. 
-"
-]
-];
-
-player createDiaryRecord["404games",
-[
-"Teamspeak",
-"
-<br/>
-	There is a public Teamspeak 3 server available for players of this server.<br/><br/>
-	Teamspeak IP: ts.404games.co.uk<br/><br/>
-	Please join and say hello! (Please speak English)
-"
-]
+player createDiaryRecord[
+	"info",
+	[
+		"Teamspeak",
+		"<br/>
+		The admins and some players are usually found on the DD TS Server.<br/><br/>
+		Teamspeak IP: ts.doubledutchclan.nl (password: dd)<br/><br/>
+		Please join and say hello! (Please speak Dutch or English)
+		"
+	]
 ];
 
 player createDiaryRecord["wasteland",
@@ -327,7 +131,7 @@ Q. Whats with the teapots and big bags?<br/>
 A. This game has a food and water system that you must stay on top of if you hope to survive. You can collect food and water from water barrels, food stands, or dead players bodies. Food and water will randomly spawn around the map. Other items that will randomly spawn are fuel cans for refueling vehicles, medkits for healing yourself, and repair kits for repairing vehicles. Each of these is a one-time-only use item.
 <br/><br/>
 Q. I saw someone breaking a rule, what do I do?<br/>
-A. Simply go into global chat and get the attention of one of the admins or visit www.404games.co.uk/forum and make a report if the offence is serious.
+A. Simply go into global chat and get the attention of one of the admins or visit www.doubledutchclan.nl and make a report on our chat if the offence is serious.
 <br/>
 "]
 ];
