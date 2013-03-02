@@ -21,10 +21,10 @@ _mainTextColour = "#0095FF";
 _successTextColour = "#17FF41";
 _failTextColour = "#FF1717";
 _subTextColour = "#FFFFFF";
-_missionTimeOut = 3600;
-_missionDelayTime = 60;
+_missionTimeOut = 86400;
+_missionDelayTime = 300;
 _missionRewardRadius = 1500;
-_reward = round(random 500);
+_reward = 200;
 
 _carrierArray = ["carrier_1",
 				"carrier_2",

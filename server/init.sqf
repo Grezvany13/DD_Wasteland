@@ -38,6 +38,7 @@ if (serverSpawning == 1) then {
     waitUntil{sleep 0.1; scriptDone _heliSpawn};
     _markerClean = [] ExecVM "server\functions\cleanMarkers.sqf";
     waitUntil{sleep 0.1; scriptDone _markerClean};
+    execVM "server\functions\buildingLootSpawning.sqf";
 };
 #endif
 //Execute Server Missions.

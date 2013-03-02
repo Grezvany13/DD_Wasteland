@@ -24,7 +24,7 @@ _subTextColour = "#FFFFFF";
 _missionTimeOut = 2600;
 _missionDelayTime = 600; //2700
 _missionRewardRadius = 1500;
-_reward = ceil(random 1000);
+_reward = 500;
 
 _invasionArray = ["invasion_1",
 				"invasion_2",
