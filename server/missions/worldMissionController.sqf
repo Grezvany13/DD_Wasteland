@@ -5,7 +5,7 @@ if(!isServer) exitWith {};
 diag_log format["WASTELAND SERVER - Started Mission State"];
 
 //Main Mission Array
-_MMarray = [];
+_MMarray = ["mission_invasion"];
 
 worldMissionRunning = false;
 #ifdef __A2NET__
