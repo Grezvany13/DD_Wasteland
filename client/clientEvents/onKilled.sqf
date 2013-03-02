@@ -8,6 +8,8 @@ _player = (_this select 0) select 0;
 _killer = (_this select 0) select 1;
 if(isnil {_player getVariable "cmoney"}) then {_player setVariable["cmoney",0,true];};
 
+_getUID = getPlayerUID player;
+
 PlayerCDeath = [_player];
 publicVariable "PlayerCDeath";
 if (isServer) then {
@@ -83,6 +85,54 @@ if((_player getVariable "repairkits") > 0) then {
 	for "_b" from 1 to (_player getVariable "repairkits") do {	
 		_m = "Suitcase" createVehicle (position _player);
 		_to_delete = _to_delete + [_m];
+	};
+};
+
+// DROP FOOD AND WATER IF NOT ENOUGHT ON MAP
+_allVehicles = vehicles;
+_vehicleCountFood = 0;
+_vehicleCountWater = 0;
+
+{
+	_vehicle = _X;
+	_vehicleType = Format["%1",typeOf _x];
+	
+	//deleteVehicle _vehicle;
+	
+	if( (_vehicleType isKindOf "Land_Bag_EP1") OR (_vehicleType isKindOf "Land_Teapot_EP1") ) then {
+	
+		if(_vehicleType isKindOf "Land_Bag_EP1") then {
+			_vehicleCountFood = _vehicleCountFood + 1;
+		} else {
+			_vehicleCountWater = _vehicleCountWater + 1;
+		};
+	};
+	
+}forEach _allVehicles;
+
+if((_player getVariable "canfood") > 0 AND _vehicleCountFood < 50) then {
+	for "_c" from 1 to (_player getVariable "canfood") do {	
+		player setVariable["canfood",(player getVariable "canfood")-1,true];
+		_temp1 = "Land_Bag_EP1" createVehicle (position player);
+		_temp1 setPos [(_pos select 0)+1, _pos select 1, _pos select 2];
+		_temp1 setVariable["food",10,true];
+	};
+};
+
+if((_player getVariable "water") > 0 AND _vehicleCountWater < 50) then {
+	for "_d" from 1 to (_player getVariable "water") do {	
+		player setVariable["water", (player getvariable "water")-1,true];
+		_temp2 = "Land_Teapot_EP1" createVehicle (position player);
+		_temp2 setPos _pos;
+	};
+};
+
+if((_player getVariable "fuelFull") > 0) then {
+	for "_e" from 1 to (_player getVariable "fuelFull") do {	
+		player setVariable["fuelFull",(player getVariable "fuelFull")-1,true];
+		_temp3 = "Fuel_can" createVehicle (position player);
+		_temp3 setVariable["fuel", true, true];
+		_temp3 setPos _pos;
 	};
 };
 
