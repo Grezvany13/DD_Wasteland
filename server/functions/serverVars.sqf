@@ -39,6 +39,8 @@ pvar_beaconListBlu = [];
 publicVariable "pvar_beaconListBlu";
 pvar_beaconListRed = []; 
 publicVariable "pvar_beaconListRed";
+pvar_beaconListInd = [];
+publicVariable "pvar_beaconListInd";
 clientMissionMarkers = [];
 publicVariable "clientMissionMarkers";
 clientRadarMarkers = [];

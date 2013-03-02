@@ -1,4 +1,3 @@
-
 //	@file Version: 1.0
 //	@file Name: pickupBecon.sqf
 //	@file Author: [404] Costlyy
@@ -31,26 +30,39 @@ _activeBeacon = false;
 	if(str(_playerUID) == str(_x select 3)) then {
     	_activeBeacon = true;
     };
-    
+
 }forEach pvar_beaconListBlu;
 // PRECONDITION: Check that the player does not have a currently deployed spawn beacon (RED).
 {
     if(str(_playerUID) == str(_x select 3)) then {
-    	_activeBeacon = true;	
+    	_activeBeacon = true;
     };
 }forEach pvar_beaconListRed;
+// PRECONDITION: Check that the player does not have a currently deployed spawn beacon (IND).
+{
+    if(str(_playerUID) == str(_x select 3)) then {
+    	_activeBeacon = true;
+    };
+}forEach pvar_beaconListInd;
 
+//Dropped in favour of just replacing previous beacon
 // Due to the 'Undefined behaviour' of exitWith inside loops, this is the workaround.
-if (_activeBeacon) exitWith {
-	player globalChat localize "STR_WL_Errors_BeaconActive";
+//if (_activeBeacon) exitWith {
+//	player globalChat localize "STR_WL_Errors_BeaconActive";
+//};
+
+// Remove active beacon so you can deploy new
+if (_activeBeacon) then {
+        hint "Deactivating existing active spawn beacon.";
+        [_playerUID] execVM "client\functions\cleanBeaconArrays.sqf";
 };
-		
+
 player switchMove "AinvPknlMstpSlayWrflDnon_medic"; // Begin the full medic animation...
 
 mutexScriptInProgress = true;
 
 for "_iteration" from 1 to _lockDuration do {
-		
+
 	if(vehicle player != player) exitWith {
 		player globalChat localize "STR_WL_Errors_BeaconInVehicle";
         player action ["eject", vehicle player];
@@ -107,9 +119,14 @@ for "_iteration" from 1 to _lockDuration do {
 	    	pvar_beaconListRed set [count pvar_beaconListRed,[_beaconOwner, _placedBeaconPos, 100, _playerUID]];
 	    	publicVariable "pvar_beaconListRed";
 	    };
-	                  
-		mutexScriptInProgress = false;
-	};     
-};        		
 
-player SwitchMove "amovpknlmstpslowwrfldnon_amovpercmstpsraswrfldnon"; // Redundant reset of animation state to avoid getting locked in animation. 
+	    if(_playerSide == "GUER") then {
+	    	pvar_beaconListInd set [count pvar_beaconListInd,[_beaconOwner, _placedBeaconPos, 100, _playerUID]];
+	    	publicVariable "pvar_beaconListInd";
+	    };
+
+		mutexScriptInProgress = false;
+	};
+};
+
+player SwitchMove "amovpknlmstpslowwrfldnon_amovpercmstpsraswrfldnon"; // Redundant reset of animation state to avoid getting locked in animation.
