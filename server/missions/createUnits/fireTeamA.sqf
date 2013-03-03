@@ -26,25 +26,19 @@ _leader addWeapon "M14_EP1";
 
 //Rifleman
 _man2 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 2, _pos select 1, 0], [], 0, "FORM"];
-_man2 addMagazine "30Rnd_556x45_Stanag";
-_man2 addMagazine "30Rnd_556x45_Stanag";
-_man2 addMagazine "30Rnd_556x45_Stanag";
-_man2 addMagazine "30Rnd_556x45_Stanag";
-_man2 addMagazine "1Rnd_HE_M203";
-_man2 addMagazine "1Rnd_HE_M203";
-_man2 addMagazine "1Rnd_Smoke_M203";
-_man2 addWeapon "M16A4_ACG_GL";
+_man2 addMagazine "30Rnd_762x39_SA58";
+_man2 addMagazine "30Rnd_762x39_SA58";
+_man2 addMagazine "30Rnd_762x39_SA58";
+_man2 addMagazine "30Rnd_762x39_SA58";
+_man2 addWeapon "`Sa58V_CCO_EP1";
 
 //Rifleman
 _man3 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 3, _pos select 1, 0], [], 0, "FORM"];
-_man3 addMagazine "30Rnd_556x45_Stanag";
-_man3 addMagazine "30Rnd_556x45_Stanag";
-_man3 addMagazine "30Rnd_556x45_Stanag";
-_man3 addMagazine "30Rnd_556x45_Stanag";
-_man3 addMagazine "1Rnd_HE_M203";
-_man3 addMagazine "1Rnd_HE_M203";
-_man3 addMagazine "1Rnd_Smoke_M203";
-_man3 addWeapon "M4A1_HWS_GL_camo";
+_man3 addMagazine "30Rnd_762x39_SA58";
+_man3 addMagazine "30Rnd_762x39_SA58";
+_man3 addMagazine "30Rnd_762x39_SA58";
+_man3 addMagazine "30Rnd_762x39_SA58";
+_man3 addWeapon "Sa58V_CCO_EP1";
 
 //Sniper
 _man4 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 4, _pos select 1, 0], [], 0, "FORM"];

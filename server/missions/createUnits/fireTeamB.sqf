@@ -26,37 +26,29 @@ _leader addWeapon "DMR";
 
 //Rifleman
 _man2 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 6, _pos select 1, 0], [], 0, "FORM"];
-_man2 addMagazine "30Rnd_556x45_Stanag";
-_man2 addMagazine "30Rnd_556x45_Stanag";
-_man2 addMagazine "30Rnd_556x45_Stanag";
-_man2 addMagazine "30Rnd_556x45_Stanag";
-_man2 addMagazine "1Rnd_HE_M203";
-_man2 addMagazine "1Rnd_HE_M203";
+_man2 addMagazine "30Rnd_556x45_StanagSD";
+_man2 addMagazine "30Rnd_556x45_StanagSD";
+_man2 addMagazine "30Rnd_556x45_StanagSD";
+_man2 addMagazine "30Rnd_556x45_StanagSD";
 _man2 addMagazine "1Rnd_Smoke_M203";
-_man2 addWeapon "SCAR_L_CQC_EGLM_Holo";
+_man2 addWeapon "SCAR_L_CQC_CCO_SD";
 
 //Rifleman
 _man3 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 7, _pos select 1, 0], [], 0, "FORM"];
-_man3 addMagazine "20Rnd_762x51_B_SCAR";
-_man3 addMagazine "20Rnd_762x51_B_SCAR";
-_man3 addMagazine "20Rnd_762x51_B_SCAR";
-_man3 addMagazine "20Rnd_762x51_B_SCAR";
-_man3 addMagazine "1Rnd_HE_M203";
-_man3 addMagazine "1Rnd_HE_M203";
-_man3 addMagazine "1Rnd_Smoke_M203";
-_man3 addWeapon "SCAR_H_STD_EGLM_Spect";
+_man3 addMagazine "30Rnd_556x45_StanagSD";
+_man3 addMagazine "30Rnd_556x45_StanagSD";
+_man3 addMagazine "30Rnd_556x45_StanagSD";
+_man3 addMagazine "30Rnd_556x45_StanagSD";
+_man3 addWeapon "SCAR_L_CQC_CCO_SD";
 
 //Rifleman
 _man4 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 8, _pos select 1, 0], [], 0, "FORM"];
-_man4 addMagazine "20Rnd_762x51_B_SCAR";
-_man4 addMagazine "20Rnd_762x51_B_SCAR";
-_man4 addMagazine "20Rnd_762x51_B_SCAR";
-_man4 addMagazine "20Rnd_762x51_B_SCAR";
+_man4 addMagazine "30Rnd_556x45_StanagSD";
+_man4 addMagazine "30Rnd_556x45_StanagSD";
+_man4 addMagazine "30Rnd_556x45_StanagSD";
+_man4 addMagazine "30Rnd_556x45_StanagSD";
 _man4 addMagazine "HandGrenade_West";
-_man4 addMagazine "HandGrenade_West";
-_man4 addMagazine "HandGrenade_West";
-_man4 addMagazine "HandGrenade_West";
-_man4 addWeapon "SCAR_H_CQC_CCO";
+_man4 addWeapon "SCAR_L_CQC_CCO_SD";
 
 //Support
 _man5 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 9, _pos select 1, 0], [], 0, "FORM"];

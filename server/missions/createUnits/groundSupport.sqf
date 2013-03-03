@@ -45,7 +45,7 @@ _man3 addMagazine "HandGrenade_West";
 _man3 addWeapon "M8_compact";
 
 //Random vehicle
-_randomVehicle = ["M1128_MGS_EP1", "AAV", "BMP2_UN_EP1", "BAF_Jackal2_L2A1_w"] call BIS_fnc_selectRandom;
+_randomVehicle = ["M1128_MGS_EP1", "AAV", "BMP2_UN_EP1", "BAF_Jackal2_L2A1_w", "BTR60_TK_EP1", "M113Ambul_TK_EP1", "BRDM2_TK_GUE_EP1"] call BIS_fnc_selectRandom;
 _vehicle = createVehicle [_randomVehicle, [(_pos select 0) - 20, (_pos select 1) - 20, 0], [], 0, "FORM"];
 
 //Assign positions and shove them in vehicle
