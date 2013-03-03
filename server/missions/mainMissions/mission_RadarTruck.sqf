@@ -44,7 +44,7 @@ _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>M
 [nil,nil,rHINT,_hint] call RE;
 
 CivGrpM = createGroup civilian;
-[CivGrpM,_randomPos] spawn createEliteGroup;
+[CivGrpM,_randomPos] execVM "server\missions\factoryMethods\createUnits\eliteGroup.sqf";
 
 diag_log format["WASTELAND SERVER - Main Mission Waiting to be Finished: %1",_missionType];
 #ifdef __A2NET__
