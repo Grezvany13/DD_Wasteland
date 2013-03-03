@@ -43,12 +43,12 @@ _vehicleName = getText (configFile >> "cfgVehicles" >> typeOf _vehicle >> "displ
 _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>Main Objective</t><br/><t align='center' color='%4'>------------------------------</t><br/><t align='center' color='%5' size='1.25'>%1</t><br/><t align='center'><img size='5' image='%2'/></t><br/><t align='center' color='%5'>A<t color='%4'> %3</t>, has been immobilized go get it for your team.</t>", _missionType, _picture, _vehicleName, mainMissionColor, subTextColor];
 [nil,nil,rHINT,_hint] call RE;
 
-CivGrpM1 = createGroup civilian1;
-[CivGrpM1,_randomPos] spawn createSecurityAGroup;
-CivGrpM2 = createGroup civilian2;
-[CivGrpM2,_randomPos] spawn createSecurityBGroup;
-CivGrpM3 = createGroup civilian3;
-[CivGrpM3,_randomPos] spawn createSecurityBGroup;
+CivGrpM1 = createGroup civilian;
+[CivGrpM1,_randomPos] execVM "server\missions\factoryMethods\createUnits\securityaGroup.sqf";
+CivGrpM2 = createGroup civilian;
+[CivGrpM2,_randomPos] execVM "server\missions\factoryMethods\createUnits\securitybGroup.sqf";
+CivGrpM3 = createGroup civilian;
+[CivGrpM3,_randomPos] execVM "server\missions\factoryMethods\createUnits\securitybGroup.sqf";
 
 diag_log format["WASTELAND SERVER - Main Mission Waiting to be Finished: %1",_missionType];
 #ifdef __A2NET__
@@ -67,9 +67,12 @@ waitUntil
 	#endif
     if(_currTime - _startTime >= mainMissionTimeout) then {_result = 1;};
     {if((isPlayer _x) AND (_x distance _vehicle <= missionRadiusTrigger)) then {_playerPresent = true};}forEach playableUnits;
-    _unitsAlive = ({alive _x} count units CivGrpM1);
-	_unitsAlive = ({alive _x} count units CivGrpM2);
-	_unitsAlive = ({alive _x} count units CivGrpM3);
+    _Group1Alive = ({alive _x} count units CivGrpM1);
+	_Group2Alive = ({alive _x} count units CivGrpM2);
+	_Group3Alive = ({alive _x} count units CivGrpM3);
+
+	_UnitsAlive = _Group1Alive + _Group2Alive + _Group3Alive;
+	
     (_result == 1) OR ((_playerPresent) AND (_unitsAlive < 1)) OR ((damage _vehicle) == 1)
 };
 
