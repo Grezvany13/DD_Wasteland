@@ -13,6 +13,8 @@ private ["_result","_missionMarkerName","_missionType","_startTime","_returnData
 _result = 0;
 _missionMarkerName = "Outpost_Marker";
 _missionType = "Capture Outpost";
+_missionRewardRadius = 1000;
+_reward = 200;
 #ifdef __A2NET__
 _startTime = floor(netTime);
 #else
@@ -73,6 +75,12 @@ if(_result == 1) then
 } else {
 	//Mission Complete.
     deleteGroup CivGrpM;
+    //Cash Reward
+    {
+        if ((_x distance _randomPos) <= _missionRewardRadius) then {
+            _x setVariable ["cmoney", (_x getVariable "cmoney")+ _reward, true];
+        };
+    } forEach playableUnits;
     _hint = parseText format ["<t align='center' color='%3' shadow='2' size='1.75'>Objective Complete</t><br/><t align='center' color='%3'>------------------------------</t><br/><t align='center' color='%4' size='1.25'>%1</t><br/><t align='center' color='%4'>The outpost has been captured, use what you found to help you crush the enemy</t>", _missionType, _vehicleName, successMissionColor, subTextColor];
 	[nil,nil,rHINT,_hint] call RE;
     diag_log format["WASTELAND SERVER - Main Mission Success: %1",_missionType];

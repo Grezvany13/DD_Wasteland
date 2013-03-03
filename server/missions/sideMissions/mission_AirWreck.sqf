@@ -14,11 +14,16 @@ private ["_result","_missionMarkerName","_missionType","_startTime","_returnData
 _result = 0;
 _missionMarkerName = "AirWreck_Marker";
 _missionType = "Aircraft Wreck";
+_missionRewardRadius = 1000;
+_reward = 300;
+
 #ifdef __A2NET__
 _startTime = floor(netTime);
 #else
 _startTime = floor(time);
 #endif
+
+
 
 diag_log format["WASTELAND SERVER - Side Mission Started: %1",_missionType];
 
@@ -47,8 +52,12 @@ _vehicleName = getText (configFile >> "cfgVehicles" >> typeOf _vehicle >> "displ
 _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>Side Objective</t><br/><t align='center' color='%4'>------------------------------</t><br/><t align='center' color='%5' size='1.25'>%1</t><br/><t align='center'><img size='5' image='%2'/></t><br/><t align='center' color='%5'>A<t color='%4'> %3</t>, has come down under enemy fire!</t>", _missionType, _picture, _vehicleName, sideMissionColor, subTextColor];
 [nil,nil,rHINT,_hint] call RE;
 
-CivGrpS = createGroup civilian;
-[CivGrpS,_randomPos] spawn createMidGroup;
+CivGrpM1 = createGroup civilian;
+[CivGrpM1,_randomPos] execVM "server\missions\factoryMethods\createUnits\securityaGroup.sqf";
+CivGrpM2 = createGroup civilian;
+[CivGrpM2,_randomPos] execVM "server\missions\factoryMethods\createUnits\securitybGroup.sqf";
+CivGrpM3 = createGroup civilian;
+[CivGrpM3,_randomPos] execVM "server\missions\factoryMethods\createUnits\securitybGroup.sqf";
 
 diag_log format["WASTELAND SERVER - Side Mission Waiting to be Finished: %1",_missionType];
 #ifdef __A2NET__
@@ -67,7 +76,11 @@ waitUntil
 	#endif
     if(_currTime - _startTime >= sideMissionTimeout) then {_result = 1;};
     {if((isPlayer _x) AND (_x distance _box <= missionRadiusTrigger)) then {_playerPresent = true};}forEach playableUnits;
-    _unitsAlive = ({alive _x} count units CivGrpS);
+    _Group1Alive = ({alive _x} count units CivGrpM1);
+    _Group2Alive = ({alive _x} count units CivGrpM2);
+    _Group3Alive = ({alive _x} count units CivGrpM3);
+
+    _UnitsAlive = _Group1Alive + _Group2Alive + _Group3Alive;
     (_result == 1) OR ((_playerPresent) AND (_unitsAlive < 1)) OR ((damage _box) == 1)
 };
 
@@ -77,15 +90,29 @@ if(_result == 1) then
     deleteVehicle _box;
     deleteVehicle _box2;
     deleteVehicle _vehicle;
-    {deleteVehicle _x;}forEach units CivGrps;
-    deleteGroup CivGrpS;
+    {deleteVehicle _x;}forEach units CivGrpM1;
+    {deleteVehicle _x;}forEach units CivGrpM2;
+    {deleteVehicle _x;}forEach units CivGrpM3;
+    deleteGroup CivGrpM1;
+    deleteGroup CivGrpM2;
+    deleteGroup CivGrpM3;
     _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>Objective Failed</t><br/><t align='center' color='%4'>------------------------------</t><br/><t align='center' color='%5' size='1.25'>%1</t><br/><t align='center'><img size='5' image='%2'/></t><br/><t align='center' color='%5'>Objective failed, better luck next time</t>", _missionType, _picture, _vehicleName, failMissionColor, subTextColor];
 	[nil,nil,rHINT,_hint] call RE;
     diag_log format["WASTELAND SERVER - Side Mission Failed: %1",_missionType];
 } else {
 	//Mission Complete.
     deleteVehicle _vehicle;
-    deleteGroup CivGrpS;
+    deleteGroup CivGrpM1;
+    deleteGroup CivGrpM2;
+    deleteGroup CivGrpM3;
+
+    //Cash Reward
+    {
+        if ((_x distance _randomPos) <= _missionRewardRadius) then {
+            _x setVariable ["cmoney", (_x getVariable "cmoney")+ _reward, true];
+        };
+    } forEach playableUnits;
+
     _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>Objective Complete</t><br/><t align='center' color='%4'>------------------------------</t><br/><t align='center' color='%5' size='1.25'>%1</t><br/><t align='center'><img size='5' image='%2'/></t><br/><t align='center' color='%5'>The ammo caches have been collected well done team</t>", _missionType, _picture, _vehicleName, successMissionColor, subTextColor];
 	[nil,nil,rHINT,_hint] call RE;
     diag_log format["WASTELAND SERVER - Side Mission Success: %1",_missionType];
