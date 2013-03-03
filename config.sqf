@@ -98,7 +98,7 @@ ammoArray = [
     ["PG-7V.","PG7V",85],
     ["SMAW-HEAA","SMAW_HEAA",100],
     ["Stinger Ammo","Stinger",225],
-	["NLAW Ammo","NLAW",250]
+	["NLAW Ammo","NLAW",250],
     ["Javelin Ammo","Javelin",250]
 ];
 
