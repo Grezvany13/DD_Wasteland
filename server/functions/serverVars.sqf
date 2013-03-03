@@ -133,7 +133,6 @@ militaryVehicles = [
 
 //Armed Military Vehicle List - Random Spawns
 armedMilitaryVehicles = [	
-	"ArmoredSUV_PMC",
 	"Pickup_PK_GUE",
 	"UAZ_MG_TK_EP1",
 	"LandRover_MG_TK_INS_EP1",
@@ -222,7 +221,33 @@ objectList = [
 staticWeaponsList = [
 	"M2StaticMG_US_EP1",
 	"KORD_high",
+	"AGS_UN_EP1",
+	"AGS_TK_GUE_EP1",
 	"DSHKM_TK_INS_EP1",
+	"Igla_AA_pod_TK_EP1",
+	"DSHkM_Mini_TriPod_TK_INS_EP1",
+	"DSHkM_Mini_TriPod_TK_GUE_EP1",
+	"KORD_TK_EP1",
+	"KORD_high_UN_EP1",
+	"M2HD_mini_TriPod_US_EP1",
+	"MK19_TriPod_US_EP1",
+	"Metis_TK_EP1",
+	"SPG9_TK_INS_EP1",
+	"SearchLight_TK_EP1",
+	"SPG9_TK_GUE_EP1",
+	"Stinger_Pod_US_EP1",
+	"TOW_TriPod_US_EP1",
+	"ZU23_TK_EP1",
+	"ZU23_TK_GUE_EP1",
+	"DSHkM_Mini_TriPod_CDF",
+	"DSHKM_Gue",
+	"Fort_Nest_M240",
+	"KORD",
+	"Igla_AA_pod_East",
+	"SPG9_CDF",
+	"Metis",
+	"DSHKM_TK_INS_EP1",
+	"ZU23_Ins",
 	"SearchLight"];
 
 //Object List - Random Helis.
@@ -234,7 +259,6 @@ staticHeliList = [
 	"MH6J_EP1",
 	"UH60M_EP1",
 	"Mi171Sh_CZ_EP1",
-	"UH1H_TK_GUE_EP1",
 	"UH60M_MEV_EP1",
 	"UH1H_TK_EP1",
 	"Mi17_TK_EP1",
