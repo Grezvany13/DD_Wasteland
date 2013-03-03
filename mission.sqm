@@ -3253,7 +3253,7 @@ class Mission
 			azimut=115;
 			id=201;
 			side="EMPTY";
-			vehicle="MV22";
+			vehicle="UH60M_MEV_EP1";
 			skill=0.60000002;
 			init="veh = [this, 1200, 0, 0, FALSE, FALSE] execVM ""vehicle.sqf""";
 		};
@@ -3273,7 +3273,7 @@ class Mission
 			azimut=200;
 			id=203;
 			side="EMPTY";
-			vehicle="C130J";
+			vehicle="An2_1_TK_CIV_EP1";
 			skill=0.60000002;
 			init="veh = [this, 1200, 0, 0, FALSE, FALSE] execVM ""vehicle.sqf""";
 		};
