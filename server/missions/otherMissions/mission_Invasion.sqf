@@ -91,14 +91,11 @@ _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>I
 [nil,nil,rHINT,_hint] call RE;
 
 //Random vehicle reward
-_randomVehicle = ["AH64D_Sidewinders", "AW159_Lynx_BAF", "AH6J_EP1", "M1A1_US_DES_EP1", "BAF_FV510_W", "M1A2_US_TUSK_MG_EP1", "T90", "BMP3", "2S6M_Tunguska"] call BIS_fnc_selectRandom;
-_vehicle = createVehicle [_randomVehicle, [(_randomPos select 0) - 10, (_randomPos select 1), 0], [], 0, "NONE"];
+_randomVehicle = ["AH64D_Sidewinders", "AW159_Lynx_BAF", "M1A2_US_TUSK_MG_EP1", "T90", "2S6M_Tunguska"] call BIS_fnc_selectRandom;
+_randomVehicle2 = ["MTVR_Reammo", "MTVR_Repair", "MTVR_Refuel", "KamazRepair", "UralRefuel_INS", "UralRepair_INS", "UralReammo_INS", "KamazRefuel", "KamazReammo"] call BIS_fnc_selectRandom;
 
-if (_vehicle isKindOf "Air") then
-{
-	_vehicle setVehicleInit "this addAction [('<t color=''#00EEFF''>') + ('HALO Jump') + '</t>','addons\haloJump\haloJump.sqf',[],7,false,true,'','player in _target']";
-	processInitCommands;
-};
+_vehicle = createVehicle [_randomVehicle, [(_randomPos select 0) - 10, (_randomPos select 1), 0], [], 0, "NONE"];
+_vehicle2 = createVehicle [_randomVehicle2, [(_randomPos select 0) - 20, (_randomPos select 1), 0], [], 0, "NONE"];
 
 clearMagazineCargoGlobal _vehicle;
 clearWeaponCargoGlobal _vehicle;
@@ -106,6 +103,10 @@ clearWeaponCargoGlobal _vehicle;
 _vehicle setVehicleLock "LOCKED";
 _vehicle setVariable ["original",1,true];
 _vehicle setVariable ["R3F_LOG_disabled", true, true];
+
+_vehicle2 setVehicleLock "LOCKED";
+_vehicle2 setVariable ["original",1,true];
+_vehicle2 setVariable ["R3F_LOG_disabled", true, true];
 
 diag_log format["WASTELAND SERVER - Mission Waiting to be Finished"];
 _startTime = floor(time);
@@ -155,6 +156,10 @@ if(_result == 1) then
 	//Mission Complete.
 	_vehicle setVehicleLock "UNLOCKED";
 	_vehicle setVariable ["R3F_LOG_disabled", false, true];
+
+	_vehicle2 setVehicleLock "UNLOCKED";
+	_vehicle2 2setVariable ["R3F_LOG_disabled", false, true];
+
 	deleteMarkerLocal "UPS";
     deleteGroup FireTeamA;
 	deleteGroup FireTeamB;
