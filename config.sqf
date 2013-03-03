@@ -15,6 +15,12 @@
 // Text name, classname, buy cost, sell amount
 weaponsArray = [
 	["AK-74","AK_74",50,25],
+	["FN FAL","FN_FAL",70,30],
+	["","",50,25],
+	["","",50,25],
+	["","",50,25],
+	["","",50,25],
+	["Lee Enfield","LeeEnfield",20,10],
 	["AK-107 Kobra","AK_107_kobra",75,35],
 	["AKM","AK_47_M",75,35],
     ["M16A4","M16A4",75,35],
@@ -43,6 +49,8 @@ weaponsArray = [
 //Text name, classname, buy cost
 ammoArray = [
 	["30Rnd AK","30Rnd_545x39_AK",10],
+	["10Rnd Lee Enfield","10x_303",5],
+	["20Rnd FN FAL","20Rnd_762x51_FNFAL",15],
 	["AKM Mag","30Rnd_762x39_AK47",10],
 	["30Rnd. STANAG","30Rnd_556x45_Stanag",10],
     ["30Rnd. STANAG SD","30Rnd_556x45_StanagSD",30],
