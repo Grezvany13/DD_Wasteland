@@ -30,11 +30,13 @@ weaponsArray = [
     ["SMAW","SMAW",300,175],
     ["Stinger","Stinger",1000,550],
     ["Javelin","Javelin",1500,750],
+	["NLAW","BAF_NLAW_Launcher",1200,400],
     ["Mk12 SPR","M4SPR",200,120],
+	["AS50","BAF_AS50_scoped",1300,650],
     ["Mk17 Sniper","SCAR_H_LNG_Sniper",500,233],
     ["Mk17 Sniper SD","SCAR_H_LNG_Sniper_SD",750,455],
     ["M110 NV","M110_NVG_EP1",1000,666],
-    ["M107","m107",2000,850]
+    ["M107","m107",1300,650]
 ];
 
 //Gun Store Ammo List
@@ -47,6 +49,7 @@ ammoArray = [
     ["Mk17 Mag.","20Rnd_762x51_B_SCAR",25],
 	["Mk17 SD Mag.","20Rnd_762x51_SB_SCAR",50],
 	["10Rnd. M107","10Rnd_127x99_m107",50],
+	["50Rnd. AS50","5Rnd_127x99_as50",25],
 	["8Rnd. M1014 Slug","8Rnd_B_Beneli_74Slug",10],
 	["8Rnd. Saiga 12K Slug","8Rnd_B_Saiga12_74Slug",10],
 	["200Rnd. M249 Belt","200Rnd_556x45_M249",50],
@@ -55,6 +58,7 @@ ammoArray = [
     ["PG-7V.","PG7V",85],
     ["SMAW-HEAA","SMAW_HEAA",100],
     ["Stinger Ammo","Stinger",225],
+	["NLAW Ammo","NLAW",250]
     ["Javelin Ammo","Javelin",250]
 ];
 
