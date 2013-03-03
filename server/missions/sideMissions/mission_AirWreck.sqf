@@ -48,7 +48,7 @@ _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>S
 [nil,nil,rHINT,_hint] call RE;
 
 CivGrpS = createGroup civilian;
-[CivGrpS,_randomPos] spawn createSmallGroup;
+[CivGrpS,_randomPos] spawn createMidGroup;
 
 diag_log format["WASTELAND SERVER - Side Mission Waiting to be Finished: %1",_missionType];
 #ifdef __A2NET__
