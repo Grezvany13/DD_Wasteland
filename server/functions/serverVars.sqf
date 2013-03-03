@@ -254,6 +254,7 @@ staticWeaponsList = [
 staticHeliList = [
 	"UH1H_TK_GUE_EP1",
 	"Mi17_Civilian",
+	"Ka137_MG_PMC",
 	"MV22",
 	"CH_47F_EP1",
 	"MH6J_EP1",
