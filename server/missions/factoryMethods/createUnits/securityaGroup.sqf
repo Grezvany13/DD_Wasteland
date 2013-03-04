@@ -14,7 +14,6 @@ _pos = _this select 1;
 //Anti Vehicle
 _leader = _group createunit ["CZ_Special_Forces_TL_DES_EP1", [(_pos select 0) + 10, _pos select 1, 0], [], 0.5, "Form"];
 _leader addMagazine "Dragon_EP1";
-_leader addMagazine "Dragon_EP1";
 _leader addWeapon "M47Launcher_EP1";
 _leader addMagazine "30Rnd_556x45_G36SD";
 _leader addMagazine "30Rnd_556x45_G36SD";
