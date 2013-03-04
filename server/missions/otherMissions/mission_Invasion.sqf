@@ -92,7 +92,7 @@ _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>I
 
 //Random vehicle reward
 _randomVehicle = ["AH64D_Sidewinders", "AW159_Lynx_BAF", "M1A2_US_TUSK_MG_EP1", "T90", "2S6M_Tunguska"] call BIS_fnc_selectRandom;
-_randomVehicle2 = ["MTVR_Reammo", "MTVR_Repair", "MTVR_Refuel", "KamazRepair", "UralRefuel_INS", "UralRepair_INS", "UralReammo_INS", "KamazRefuel", "KamazReammo"] call BIS_fnc_selectRandom;
+_randomVehicle2 = ["MtvrRefuel","MtvrReammo","MtvrRepair","UralReammo_TK_EP1","UralRefuel_TK_EP1","UralRepair_TK_EP1","KamazReammo","KamazRefuel","KamazRepair"] call BIS_fnc_selectRandom;
 
 _vehicle = createVehicle [_randomVehicle, [(_randomPos select 0) - 10, (_randomPos select 1), 0], [], 0, "NONE"];
 _vehicle2 = createVehicle [_randomVehicle2, [(_randomPos select 0) - 20, (_randomPos select 1), 0], [], 0, "NONE"];
