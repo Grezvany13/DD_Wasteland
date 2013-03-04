@@ -11,7 +11,7 @@ _group = _this select 0;
 _pos = _this select 1;
 
 //Leader
-_leader = _group createUnit ["CZ_Soldier_Pilot_EP1", [(_pos select 0) + 1, (_pos select 1) - 7, 0], [], 0, "FORM"];
+_leader = _group createUnit ["Policeman", [(_pos select 0) + 1, (_pos select 1) - 7, 0], [], 0, "FORM"];
 _leader addMagazine "30Rnd_556x45_Stanag";
 _leader addMagazine "30Rnd_556x45_Stanag";
 _leader addMagazine "30Rnd_556x45_Stanag";
@@ -25,7 +25,7 @@ _leader addMagazine "HandGrenade_West";
 _leader addWeapon "M8_compact";
 
 //Rifleman
-_man2 = _group createUnit ["CZ_Soldier_Pilot_EP1", [(_pos select 0) + 1, (_pos select 1) - 8, 0], [], 0, "FORM"];
+_man2 = _group createUnit ["Woodlander4", [(_pos select 0) + 1, (_pos select 1) - 8, 0], [], 0, "FORM"];
 _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addMagazine "30Rnd_556x45_Stanag";
@@ -35,7 +35,7 @@ _man2 addMagazine "HandGrenade_West";
 _man2 addWeapon "M8_compact";
 
 //Rifleman
-_man3 = _group createUnit ["CZ_Soldier_Pilot_EP1", [(_pos select 0) + 1, (_pos select 1) - 9, 0], [], 0, "FORM"];
+_man3 = _group createUnit ["Woodlander4", [(_pos select 0) + 1, (_pos select 1) - 9, 0], [], 0, "FORM"];
 _man3 addMagazine "30Rnd_556x45_Stanag";
 _man3 addMagazine "30Rnd_556x45_Stanag";
 _man3 addMagazine "30Rnd_556x45_Stanag";
