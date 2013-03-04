@@ -91,7 +91,7 @@ _man9 addMagazine "1Rnd_HE_M203";
 _man9 addWeapon "M4A3_RCO_GL_EP1";
 
 //Sniper
-_man10 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) - 1, (_pos select 1) + 10, 15.5], [], 0.5, "FORM"];
+_man10 = _group createUnit ["Woodlander4", [(_pos select 0) - 1, (_pos select 1) + 10, 15.5], [], 0.5, "FORM"];
 _man10 addMagazine "5Rnd_762x51_M24";
 _man10 addMagazine "5Rnd_762x51_M24";
 _man10 addMagazine "5Rnd_762x51_M24";
