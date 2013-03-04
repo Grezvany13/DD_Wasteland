@@ -30,7 +30,7 @@ _man2 addMagazine "30Rnd_762x39_SA58";
 _man2 addMagazine "30Rnd_762x39_SA58";
 _man2 addMagazine "30Rnd_762x39_SA58";
 _man2 addMagazine "30Rnd_762x39_SA58";
-_man2 addWeapon "`Sa58V_CCO_EP1";
+_man2 addWeapon "Sa58V_CCO_EP1";
 
 //Rifleman
 _man3 = _group createUnit ["GER_Soldier_EP1", [(_pos select 0) + 3, _pos select 1, 0], [], 0, "FORM"];
