@@ -87,12 +87,12 @@ processInitCommands;
 
 sleep 5;
 
-CivGrpG = createGroup civilian;
-null = [CivGrpG,_randomPos]execVM "server\missions\createUnits\carrierGunners.sqf";
+CivGrpG1 = createGroup civilian;
+null = [CivGrpG1,_randomPos]execVM "server\missions\createUnits\carrierGunners.sqf";
 waitUntil{sleep 0.5; scriptDone null};
 
-CivGrpM = createGroup civilian;
-null = [CivGrpM,_randomPos]execVM "server\missions\createUnits\carrierGroup.sqf";
+CivGrpM1 = createGroup civilian;
+null = [CivGrpM1,_randomPos]execVM "server\missions\createUnits\carrierGroup.sqf";
 waitUntil{sleep 0.5; scriptDone null};
 
 _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>High Priority Target</t><br/><t align='center' color='%2'>------------------------------</t><br/><t align='center' color='%3' size='1.25'>%1</t><br/><t align='center' color='%3'>An Aircraft Carrier is just off shore, destroy the crew and capture it for your team!</t>", _missionType,  _mainTextColour, _subTextColour];
@@ -100,8 +100,8 @@ _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>H
 
 diag_log format["WASTELAND SERVER - Mission Waiting to be Finished"];
 _startTime = floor(time);
-_defendersAlive = ({alive _x} count units CivGrpM);
-_gunnersAlive = ({alive _x} count units CivGrpG);
+_defendersAlive = ({alive _x} count units CivGrpM1);
+_gunnersAlive = ({alive _x} count units CivGrpG1);
 _unitsAlive = _defendersAlive + _gunnersAlive;
 
 while {_unitsAlive > 0} do {
@@ -110,20 +110,20 @@ while {_unitsAlive > 0} do {
 	_currTime = floor(time);
 	if (_currTime - _startTime >= _missionTimeOut) then {_result = 1;};
 		if (_result == 1) exitWith {};
-	_defendersAlive = ({alive _x} count units CivGrpM);
-	_gunnersAlive = ({alive _x} count units CivGrpG);
+	_defendersAlive = ({alive _x} count units CivGrpM1);
+	_gunnersAlive = ({alive _x} count units CivGrpG1);
     _unitsAlive = _defendersAlive + _gunnersAlive;
 };
 
 if(_result == 1) then
 {
 	//Mission Failed.
-	{deleteVehicle _x} foreach nearestObjects [_randomPos, [], 125] - nearestObjects [_randomPos, ["allVehicles"], 125];
+	{deleteVehicle _x} forEach nearestObjects [_randomPos, [], 125] + nearestObjects [_randomPos, ["Static"], 50] - nearestObjects [_randomPos, ["allVehicles"], 125];
 	deleteVehicle _gameLogic;
-    {_x setDamage 1} forEach units CivGrpM;
-    deleteGroup CivGrpM;
-	{_x setDamage 1} forEach units CivGrpG;
-	deleteGroup CivGrpG;
+    {_x setDamage 1} forEach units CivGrpM1;
+    deleteGroup CivGrpM1;
+	{_x setDamage 1} forEach units CivGrpG1;
+	deleteGroup CivGrpG1;
 	deleteMarkerLocal "patrolCarrier";
     _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>High Priority Target failed</t><br/><t align='center' color='%2'>------------------------------</t><br/><t align='center' color='%2' size='1.25'>%1</t><br/><t align='center' color='%3'>The Aircraft Carrier has left your vicinity.</t>", _missionType, _failTextColour, _subTextColour];
 	[nil,nil,rHINT,_hint] call RE;
@@ -134,8 +134,8 @@ if(_result == 1) then
 } else {
 	//Mission Complete.
 	deleteVehicle _gameLogic;
-    deleteGroup CivGrpM;
-	deleteGroup CivGrpG;
+    deleteGroup CivGrpM1;
+	deleteGroup CivGrpG1;
 	deleteMarkerLocal "patrolCarrier";
     _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>High Priority Target captured</t><br/><t align='center' color='%2'>------------------------------</t><br/><t align='center' color='%3' size='1.25'>%1</t><br/><t align='center' color='%3'>The crew of the Aircraft Carrier have been decimated!</t><br/><t align'center' color='%4'>Reward: %5</t>", _missionType, _successTextColour, _subTextColour, _mainTextColour, _reward];
 	[nil,nil,rHINT,_hint] call RE;
