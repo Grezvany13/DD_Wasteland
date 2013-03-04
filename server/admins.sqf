@@ -6,7 +6,7 @@ publicVariable "moderators";
            
 administrators = [
     "6010118",		// Grezvany13
-	"62069382",		// Imprezzion
+	"62069382"		// Imprezzion
 ];
 publicVariable "administrators";
 

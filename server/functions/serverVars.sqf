@@ -140,7 +140,7 @@ armedMilitaryVehicles = [
 	"HMMWV_Armored",
 	"HMMWV_MK19",
 	"HMMWV_TOW",
-	"MMWV_M1151_M2_CZ_DES_EP1",
+	"HMMWV_M1151_M2_CZ_DES_EP1",
 	"HMMWV_M998_crows_M2_DES_EP1",
 	"HMMWV_M998_crows_MK19_DES_EP1",
 	"HMMWV_MK19_DES_EP1",

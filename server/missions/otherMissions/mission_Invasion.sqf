@@ -158,7 +158,7 @@ if(_result == 1) then
 	_vehicle setVariable ["R3F_LOG_disabled", false, true];
 
 	_vehicle2 setVehicleLock "UNLOCKED";
-	_vehicle2 2setVariable ["R3F_LOG_disabled", false, true];
+	_vehicle2 setVariable ["R3F_LOG_disabled", false, true];
 
 	deleteMarkerLocal "UPS";
     deleteGroup FireTeamA;
