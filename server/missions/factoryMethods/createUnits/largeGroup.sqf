@@ -12,7 +12,7 @@ _group = _this select 0;
 _pos = _this select 1;
 
 //Anti Air no weapon
-_leader = _group createunit ["Woodlander4", [(_pos select 0) + 30, _pos select 1, 0], [], 0.5, "Form"];
+_leader = _group createunit ["TK_CIV_Takistani05_EP1", [(_pos select 0) + 30, _pos select 1, 0], [], 0.5, "Form"];
 _leader addMagazine "Strela";
 _leader addWeapon "Strela";
 _leader addMagazine "30Rnd_556x45_G36";
@@ -21,61 +21,61 @@ _leader addMagazine "30Rnd_556x45_G36";
 _leader addWeapon "G36a";
 
 //Support
-_man2 = _group createunit ["Woodlander4", [(_pos select 0) - 30, _pos select 1, 0], [], 0.5, "Form"];
+_man2 = _group createunit ["TK_CIV_Takistani04_EP1", [(_pos select 0) - 30, _pos select 1, 0], [], 0.5, "Form"];
 _man2 addMagazine "100Rnd_556x45_M249";
 _man2 addMagazine "100Rnd_556x45_M249";
 _man2 addWeapon "M249_m145_EP1";
 
 //Rifle_man
-_man3 = _group createunit ["Woodlander4", [_pos select 0, (_pos select 1) + 30, 0], [], 0.5, "Form"];
+_man3 = _group createunit ["TK_CIV_Takistani01_EP1", [_pos select 0, (_pos select 1) + 30, 0], [], 0.5, "Form"];
 _man3 addMagazine "30Rnd_556x45_G36";
 _man3 addMagazine "30Rnd_556x45_G36";
 _man3 addMagazine "30Rnd_556x45_G36";
 _man3 addWeapon "G36a";
 
 //Rifle_man
-_man4 = _group createunit ["Woodlander4", [_pos select 0, (_pos select 1) + 40, 0], [], 0.5, "Form"];
+_man4 = _group createunit ["TK_CIV_Takistani03_EP1", [_pos select 0, (_pos select 1) + 40, 0], [], 0.5, "Form"];
 _man4 addMagazine "30Rnd_556x45_Stanag";
 _man4 addMagazine "30Rnd_556x45_Stanag";
 _man4 addMagazine "30Rnd_556x45_Stanag";
 _man4 addWeapon "M16A4_ACG";
 
 //Sniper
-_man5 = _group createunit ["Woodlander4", [_pos select 0, (_pos select 1) - 30, 0], [], 0.5, "Form"];
+_man5 = _group createunit ["TK_CIV_Takistani06_EP1", [_pos select 0, (_pos select 1) - 30, 0], [], 0.5, "Form"];
 _man5 addMagazine "20Rnd_556x45_Stanag";
 _man5 addMagazine "20Rnd_556x45_Stanag";
 _man5 addMagazine "20Rnd_556x45_Stanag";
 _man5 addWeapon "M4SPR";
 
 //Rifle_man_sd
-_man6 = _group createunit ["Woodlander4", [_pos select 0, (_pos select 1) - 40, 0], [], 0.5, "Form"];
+_man6 = _group createunit ["TK_CIV_Takistani06_EP1", [_pos select 0, (_pos select 1) - 40, 0], [], 0.5, "Form"];
 _man6 addMagazine "20rnd_762x51_SB_SCAR";
 _man6 addMagazine "20rnd_762x51_SB_SCAR";
 _man6 addMagazine "20rnd_762x51_SB_SCAR";
 _man6 addWeapon "SCAR_H_CQC_CCO_SD";
 
 //Machinegunner
-_man7 = _group createunit ["Woodlander4", [(_pos select 0) - 40, _pos select 1, 0], [], 0.5, "Form"];
+_man7 = _group createunit ["TK_CIV_Takistani03_EP1", [(_pos select 0) - 40, _pos select 1, 0], [], 0.5, "Form"];
 _man7 addMagazine "100Rnd_762x54_PK";
 _man7 addMagazine "100Rnd_762x54_PK";
 _man7 addWeapon "Pecheneg";
 
 //Rifle_man
-_man8 = _group createunit ["Woodlander4", [_pos select 0, (_pos select 1) + 50, 0], [], 0.5, "Form"];
+_man8 = _group createunit ["TK_CIV_Takistani01_EP1", [_pos select 0, (_pos select 1) + 50, 0], [], 0.5, "Form"];
 _man8 addMagazine "64Rnd_9x19_Bizon";
 _man8 addMagazine "64Rnd_9x19_Bizon";
 _man8 addMagazine "64Rnd_9x19_Bizon";
 _man8 addWeapon "Bizon";
 
 //Sniper
-_man9 = _group createunit ["Woodlander4", [_pos select 0, (_pos select 1) - 50, 0], [], 0.5, "Form"];
+_man9 = _group createunit ["TK_CIV_Takistani02_EP1", [_pos select 0, (_pos select 1) - 50, 0], [], 0.5, "Form"];
 _man9 addMagazine "20Rnd_556x45_Stanag";
 _man9 addMagazine "20Rnd_556x45_Stanag";
 _man9 addMagazine "20Rnd_556x45_Stanag";
 _man9 addWeapon "M8_sharpshooter";
 
 //Rifle_man
-_man10 = _group createunit ["Woodlander4", [_pos select 0, (_pos select 1) + 30, 0], [], 0.5, "Form"];
+_man10 = _group createunit ["TK_CIV_Takistani04_EP1", [_pos select 0, (_pos select 1) + 30, 0], [], 0.5, "Form"];
 _man10 addMagazine "30Rnd_556x45_Stanag";
 _man10 addMagazine "30Rnd_556x45_Stanag";
 _man10 addMagazine "30Rnd_556x45_Stanag";
