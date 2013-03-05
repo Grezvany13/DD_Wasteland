@@ -63,12 +63,12 @@ randomweapon_weaponlist = [
 ];
  
 randomweapon_itemlist = [
-"EvMoney",                                              //Money
-"Land_Teapot_EP1",                              //Water
-"Land_Bag_EP1",                                 //Food
-"Fuel_can",                                             //Fuel
-"Suitcase",                                             //Repair kit
-"CZ_VestPouch_EP1"                              //Medic kit
+"EvMoney",                              //Money
+"Land_Teapot_EP1",                      //Water
+"Land_Bag_EP1",                         //Food
+"Fuel_can",                             //Fuel
+"Suitcase",                             //Repair kit
+"CZ_VestPouch_EP1"                      //Medic kit
 ];
  
  
