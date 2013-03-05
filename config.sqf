@@ -15,6 +15,20 @@
 // Text name, classname, buy cost, sell amount
 weaponsArray = [
 	["AK-74","AK_74",50,25],
+	["AKS-74 NSPU","AKS_74_NSPU",120,60],
+	["Mk16 Holo","SCAR_L_STD_HOLO",90,45],
+	["Mk17 CCO SD","SCAR_H_CQC_CCO_SD",120,60],
+	["Sa-58V ACOG","Sa58V_RCO_EP1",80,40],
+	["M4A3 CCO","M4A3_CCO_EP1",80,40],
+	["SVD (camo)","SVD_des_EP1",420,210],
+	["G17","glock17_EP1",35,20],
+	["AKS-74UN Kobra","AKS_74_UN_kobra",70,35],
+	["M16A2","M16A2",50,25],
+	["AK-107 PSO","AK_107_pso",90,45],
+	["M16A4 ACOG","M16A4_ACG",90,45],
+	["M4A1 CCO SD","M4A1_AIM_SD_camo",130,65],
+	["Bizon PP-19 SD","bizon_silenced",120,60],
+	["VSS Vintorez","VSS_vintorez",550,275],
 	["FN FAL","FN_FAL",70,30],
 	["M14 AIM","M14_EP1",30,15],
 	["G36C (camo)","G36C_camo",60,25],
@@ -31,7 +45,7 @@ weaponsArray = [
 	["PDW","UZI_EP1",40,20],
 	["Revolver","revolver_EP1",30,15],
 	["PDW SD","UZI_SD_EP1",60,30],
-	["SVD (camo)","SVD_des_EP1",380,170],
+	["SVD","SVD",380,170],
 	["MG36","MG36",200,100],
 	["L85A2 Acog","BAF_L85A2_RIS_ACOG",80,40],
 	["L115A3 LRR","BAF_LRR_scoped",750,350],
@@ -54,9 +68,9 @@ weaponsArray = [
 	["NLAW","BAF_NLAW_Launcher",1200,400],
     ["Mk12 SPR","M4SPR",200,120],
 	["AS50","BAF_AS50_scoped",900,450],
-    ["Mk17 Sniper","SCAR_H_LNG_Sniper",500,233],
-    ["Mk17 Sniper SD","SCAR_H_LNG_Sniper_SD",750,455],
-    ["M110 NV","M110_NVG_EP1",800,444],
+    ["Mk17 Sniper","SCAR_H_LNG_Sniper",400,233],
+    ["Mk17 Sniper SD","SCAR_H_LNG_Sniper_SD",650,325],
+    ["M110 NV","M110_NVG_EP1",600,300],
     ["M107","m107",900,450]
 ];
 
@@ -66,16 +80,19 @@ ammoArray = [
 	["30Rnd AK","30Rnd_545x39_AK",10],
 	["10Rnd Lee Enfield","10x_303",5],
 	["20Rnd FN FAL","20Rnd_762x51_FNFAL",15],
+	["30Rnd AK SD","30Rnd_545x39_AKSD",25],
 	["20Rnd M14","20Rnd_762x51_DMR",15],
 	["30Rnd G36C","30Rnd_556x45_G36",10],
 	["30Rnd SA58","30Rnd_762x39_SA58",10],
 	["30Rnd XM8","30Rnd_556x45_G36",10],
 	["30Rnd MP5A5","30Rnd_9x19_MP5",10],
 	["60Rnd Bizon","64Rnd_9x19_Bizon",20],
+	["60Rnd Bizon SD","64Rnd_9x19_SD_Bizon",35],
 	["5Rnd CZ 550","5x_22_LR_17_HMR",10],
 	["5Rnd KSVK","5Rnd_127x108_KSVK",45],
 	["6Rnd He M32","6Rnd_HE_M203",40],
 	["20Rnd SA-61","20Rnd_B_765x17_Ball",10],
+	["20Rnd VSS Vintorez","20Rnd_9x39_SP5_VSS",30],
 	["30Rnd PDW","30Rnd_9x19_UZI",15],
 	["6Rnd 45ACP","6Rnd_45ACP",5],
 	["30Rnd PDW SD","30Rnd_9x19_UZI_SD",25],
@@ -107,6 +124,9 @@ ammoArray = [
 accessoriesArray = [
 	["Range Finder","Binocular_Vector",500],
 	["NV Goggles","NVGoggles",100],
+	["Czech Vest Pouch","CZ_VestPouch_EP1",60],
+	["US Bag","USBasicBag",80],
+	["Backpack (coyote)","US_Backpack_EP1",140],
     ["GPS","ItemGPS", 90]
 ];
 
