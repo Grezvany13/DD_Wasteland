@@ -62,9 +62,9 @@ player createDiaryRecord [
 		HeliJunkie - ConfigExplorer<br/>
 		<br/>
 		Double Dutch Clan Developers:<br/><br/>
-		DreamRebel - Script & mission changes<br/>
+		DreamRebel - Script and mission changes<br/>
 		Grezvany13 - Script changes<br/>
-		Waxdt 	   - Major mission changes<br/>
+		Waxdt 	   - Mission changes<br/>
 		"
 	]
 ];
