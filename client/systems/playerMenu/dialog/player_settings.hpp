@@ -11,7 +11,7 @@ class playerSettings {
 		
 		class MainBG : w_RscPicture {
 			idc = -1;
-			text = "\ca\ui\data\ui_background_controlers_ca.paa";		
+			text = "client\ui\ui_background_controlers_ca.paa";		
 			moving = true;
 			x = 0.0; y = 0.1;
 			w = 1.0; h = 0.65;
@@ -28,7 +28,7 @@ class playerSettings {
 		
 		class moneyIcon : w_RscPicture {	
 	  		idc = -1;
-        	text = "\CA\misc\data\icons\picture_money_CA.paa";
+        	text = "client\icons\money.paa";
         	x = 0.02; y = 0.32;
 			w = 0.04; h = 0.04;
 		};

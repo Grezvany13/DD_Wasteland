@@ -20,7 +20,7 @@ _veh setVehicleAmmo _ammo;
 _veh setdamage _damage;
 
 _veh setVehicleLock "LOCKED";
-_veh setVariable["original",1,true];
+_veh setVariable["newVehicle",1,true];
 _veh setVariable ["R3F_LOG_disabled", true, true];
 
 clearMagazineCargoGlobal _veh;

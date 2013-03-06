@@ -7,7 +7,7 @@
 #include "setup.sqf"
 if(!X_Server) exitWith {};
 
-sideMissions = 1;
+sideMissions = 0;
 serverSpawning = 1;
 
 //Execute Server Side Scripts.
@@ -32,12 +32,10 @@ if (serverSpawning == 1) then {
 	waitUntil{sleep 0.1; scriptDone _objSpawn};
     _boxSpawn = [] ExecVM "server\functions\boxSpawning.sqf";
 	waitUntil{sleep 0.1; scriptDone _boxSpawn};
-    _gunSpawn = [] ExecVM "server\functions\staticGunSpawning.sqf";
-	waitUntil{sleep 0.1; scriptDone _gunSpawn};
+    //_gunSpawn = [] ExecVM "server\functions\staticGunSpawning.sqf";
+	//waitUntil{sleep 0.1; scriptDone _gunSpawn};
     _heliSpawn = [] ExecVM "server\functions\staticHeliSpawning.sqf";
     waitUntil{sleep 0.1; scriptDone _heliSpawn};
-    _markerClean = [] ExecVM "server\functions\cleanMarkers.sqf";
-    waitUntil{sleep 0.1; scriptDone _markerClean};
 };
 #endif
 //Execute Server Missions.

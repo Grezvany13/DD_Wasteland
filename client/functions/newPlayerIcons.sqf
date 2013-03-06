@@ -59,13 +59,13 @@ FZF_IC_Icons =
 		private "_Plicon";
 		switch(str(playerSide)) do {
 			case "WEST": {
-				_Plicon = "\ca\ui\data\igui_side_blufor_ca.paa";
+				_Plicon = "client\icons\igui_side_blufor_ca.paa";
 			};
 			case "EAST": {
-				_Plicon = "\ca\ui\data\igui_side_opfor_ca.paa";
+				_Plicon = "client\icons\igui_side_opfor_ca.paa";
 			};
 			case "GUER": {
-				_Plicon = "\ca\ui\data\igui_side_indep_ca.paa";
+				_Plicon = "client\icons\igui_side_indep_ca.paa";
 			};
 		};
         for "_marker_index" from 0 to (_uc - 1) do {
@@ -138,7 +138,7 @@ FZF_IC_Icons =
 FZF_IC_Hud_Debug =
 {
     private ["_icon_text","_Plicon"];	
-	_Plicon = "\ca\ui\data\igui_side_blufor_ca.paa";
+	_Plicon = "client\icons\igui_side_blufor_ca.paa";
 	_icon_text = format ["<t align='left'><img image='%1'/>%2<br/></t>", _Plicon ,name cursorTarget];
 //	_icon_text = "<t align='left'>Test</t>";
 //	_icon_text = format["<t size='1.5' shadow='2' color='#689D22'>%1</t>",name cursorTarget];

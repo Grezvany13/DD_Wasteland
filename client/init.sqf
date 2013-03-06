@@ -45,18 +45,19 @@ waituntil {!(IsNull (findDisplay 46))};
 (findDisplay 46) displaySetEventHandler ["KeyDown", "_this call onKeyPress"];
 
 "currentDate" addPublicVariableEventHandler {[] call timeSync};
+"messageSystem" addPublicVariableEventHandler {[] call serverMessage};
 "clientMissionMarkers" addPublicVariableEventHandler {[] call updateMissionsMarkers};
 "clientRadarMarkers" addPublicVariableEventHandler {[] call updateRadarMarkers};
 "pvar_teamKillList" addPublicVariableEventHandler {[] call updateTeamKiller};
 "publicVar_teamkillMessage" addPublicVariableEventHandler {if(local(_this select 1)) then {[] spawn teamkillMessage;};};
 
 //client Executes
-[] execVM "client\functions\initSurvival.sqf";
+//[] execVM "client\functions\initSurvival.sqf";
 [] execVM "client\systems\hud\playerHud.sqf";
 [] execVM "client\functions\createTownMarkers.sqf";
 [] execVM "client\functions\createGunStoreMarkers.sqf";
 [] execVM "client\functions\createGeneralStoreMarkers.sqf";
-//true execVM "client\functions\loadAtmosphere.sqf"; // Set to false to disable dust, ash and wind
+//true execVM "client\functions\loadAtmosphere.sqf";
 [] execVM "client\functions\playerTags.sqf";
 [] execVM "client\functions\groupTags.sqf";
 [] call updateMissionsMarkers;

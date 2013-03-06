@@ -1,5 +1,5 @@
 #include "addons\R3F_ARTY_AND_LOG\desc_include.h"
-loadScreen = "Loading.paa";
+loadScreen = "Loading.jpg";
 respawn="BASE";
 respawnDelay=15;
 disabledAI=1;
@@ -9,7 +9,7 @@ class Header
 {
 	gameType=COOP;
 	minPlayers=1;
-	maxPlayers=40;
+	maxPlayers=120;
 };
 
 //Dialog includes

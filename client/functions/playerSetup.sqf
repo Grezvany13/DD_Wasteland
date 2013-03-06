@@ -18,35 +18,36 @@ removeAllWeapons _player;
 removeBackpack _player;
 
 //Default case means something fucked up.
-_player addMagazine "6Rnd_45ACP";
-_player addMagazine "6Rnd_45ACP";
-_player addWeapon "revolver_gold_EP1";
-_player selectWeapon "revolver_gold_EP1";
+_player addMagazine "16Rnd_9x21_Mag";
+_player addMagazine "16Rnd_9x21_Mag";
+_player addWeapon "hgun_P07_F";
+_player selectWeapon "hgun_P07_F";
 
 if(str(playerSide) in ["WEST"]) then
 {
     removeAllWeapons _player;
-    _player addMagazine "7Rnd_45ACP_1911";
-    _player addMagazine "7Rnd_45ACP_1911";
-	_player addWeapon "Colt1911";
-	_player selectWeapon "Colt1911";
+    _player addMagazine "16Rnd_9x21_Mag";
+    _player addMagazine "16Rnd_9x21_Mag";
+	_player addWeapon "hgun_P07_F";
+	_player selectWeapon "hgun_P07_F";
 };
 
 if(str(playerSide) in ["EAST"]) then
 {
     removeAllWeapons _player;
-    _player addMagazine "8Rnd_9x18_Makarov";
-    _player addMagazine "8Rnd_9x18_Makarov";
-	_player addWeapon "Makarov";
-	_player selectWeapon "Makarov";
+    _player addMagazine "16Rnd_9x21_Mag";
+    _player addMagazine "16Rnd_9x21_Mag";
+	_player addWeapon "hgun_P07_F";
+	_player selectWeapon "hgun_P07_F";
 };
 
 if(str(playerSide) in ["GUER"]) then
 {
     removeAllWeapons _player;
-    _player addMagazine "17Rnd_9x19_glock17";
-	_player addWeapon "glock17_EP1";
-	_player selectWeapon "glock17_EP1";
+    _player addMagazine "16Rnd_9x21_Mag";
+    _player addMagazine "16Rnd_9x21_Mag";
+	_player addWeapon "hgun_P07_F";
+	_player selectWeapon "hgun_P07_F";
 };
 
 _player addrating 1000000;
@@ -55,7 +56,7 @@ _player switchMove "amovpknlmstpsraswpstdnon_gear";
 thirstLevel = 100;
 hungerLevel = 100;
 
-_player setVariable["cmoney",100,false];
+_player setVariable["cmoney",100,true];
 _player setVariable["canfood",1,false];
 _player setVariable["medkits",0,false];
 _player setVariable["water",1,false];

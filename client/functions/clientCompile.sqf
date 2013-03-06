@@ -20,6 +20,7 @@ repairVehicle = compile preprocessFile "client\systems\playerMenu\repair.sqf";
 
 // Sync client with server time
 timeSync = compile preprocessFileLineNumbers "client\functions\clientTimeSync.sqf";
+serverMessage = compile preprocessFileLineNumbers "client\functions\serverMessage.sqf";
 
 // Update scripts
 updateMissionsMarkers = compile preprocessFileLineNumbers "client\functions\updatePlayerMissionMarkers.sqf";

@@ -24,7 +24,7 @@
 		class MainBackground: w_RscPicture
 		{
 			idc = -1;
-			text = "\ca\ui\data\ui_background_controlers_ca.paa";
+			text = "client\ui\ui_background_controlers_ca.paa";
 
 			x = 0.2745 * safezoneW + safezoneX;
 			y = 0.166 * safezoneH + safezoneY;

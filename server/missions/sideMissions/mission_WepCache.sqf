@@ -33,14 +33,15 @@ diag_log format["WASTELAND SERVER - Side Mission Resumed: %1",_missionType];
 
 [_missionMarkerName,_randomPos,_missionType] call createClientMarker;
 
-_box = createVehicle ["RULaunchersBox",[(_randomPos select 0), (_randomPos select 1),0],[], 0, "NONE"];
-[_box,"mission_Side_USLaunchers"] call fn_refillbox;
+_box = createVehicle ["Box_NATO_Support_F",[(_randomPos select 0), (_randomPos select 1),0],[], 0, "NONE"];
+//[_box,"mission_Side_USLaunchers"] call fn_refillbox;
 
-_box2 = createVehicle ["RUSpecialWeaponsBox",[(_randomPos select 0), (_randomPos select 1) - 10,0],[], 0, "NONE"];
-[_box2,"mission_Side_USSpecial"] call fn_refillbox;
+_box2 = createVehicle ["Box_East_Support_F",[(_randomPos select 0), (_randomPos select 1) - 10,0],[], 0, "NONE"];
+//[_box2,"mission_Side_USSpecial"] call fn_refillbox;
 
 _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>Side Objective</t><br/><t align='center' color='%2'>------------------------------</t><br/><t align='center' color='%3' size='1.25'>%1</t><br/><t align='center' color='%3'>A supply drop has been spotted near the marker</t>", _missionType,  sideMissionColor, subTextColor];
-[nil,nil,rHINT,_hint] call RE;
+messageSystem = _hint;
+publicVariable "messageSystem";
 
 CivGrpS = createGroup civilian;
 [CivGrpS,_randomPos] spawn createSmallGroup;
@@ -74,13 +75,15 @@ if(_result == 1) then
     {deleteVehicle _x;}forEach units CivGrps;
     deleteGroup CivGrpS;
     _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>Objective Failed</t><br/><t align='center' color='%2'>------------------------------</t><br/><t align='center' color='%2' size='1.25'>%1</t><br/><t align='center' color='%3'>Objective failed, better luck next time</t>", _missionType, failMissionColor, subTextColor];
-	[nil,nil,rHINT,_hint] call RE;
+	messageSystem = _hint;
+    publicVariable "messageSystem";
     diag_log format["WASTELAND SERVER - Side Mission Failed: %1",_missionType];
 } else {
 	//Mission Complete.
     deleteGroup CivGrpS;
     _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>Objective Complete</t><br/><t align='center' color='%2'>------------------------------</t><br/><t align='center' color='%3' size='1.25'>%1</t><br/><t align='center' color='%3'>The ammo caches have been collected well done team</t>", _missionType, successMissionColor, subTextColor];
-	[nil,nil,rHINT,_hint] call RE;
+	messageSystem = _hint;
+    publicVariable "messageSystem";
     diag_log format["WASTELAND SERVER - Side Mission Success: %1",_missionType];
 };
 

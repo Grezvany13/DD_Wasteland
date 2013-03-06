@@ -23,7 +23,7 @@ if (_isWreck == 0) then {
 	clearWeaponCargoGlobal _currHeli;
 	
 	//Set original status to stop ner-do-wells
-	_currHeli setVariable["original",1,true];
+	_currHeli setVariable["newVehicle",1,true];
 } else {
 	//diag_log "Spawning heli wreck...";
 	_spawnType = staticHeliList select (random (count staticHeliList - 1));
@@ -35,7 +35,7 @@ if (_isWreck == 0) then {
 	clearWeaponCargoGlobal _currHeli;
 	
 	//Set original status to stop ner-do-wells
-	_currHeli setVariable["original",1,true];
+	_currHeli setVariable["newVehicle",1,true];
     
     _currHeli setDamage 1; // Destroy this heli on the spot so it looks like a realistic crash.
 };

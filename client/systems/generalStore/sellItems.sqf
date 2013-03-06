@@ -32,7 +32,7 @@ for [{_x=0},{_x<=_size},{_x=_x+1}] do
 	if(_itemText == "Camo Net") then {player setVariable["camonet",(player getVariable "camonet") - 1,false];};
 };
 
-player setVariable["cmoney",_playerMoney + genStoreCart,false];
+player setVariable["cmoney",_playerMoney + genStoreCart,true];
 _playerMoneyText CtrlsetText format["Cash: $%1", player getVariable "cmoney"];
 
 genStoreCart = 0;

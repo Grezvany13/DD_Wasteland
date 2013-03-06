@@ -5,7 +5,7 @@
 //	@file Description: The main init.
 //	@file Args:
 #include "setup.sqf"
-if (isnil "RE") then {[] execVM "\ca\Modules\MP\data\scripts\MPframework.sqf"};
+//if (isnil "RE") then {[] execVM "\ca\Modules\MP\data\scripts\MPframework.sqf"};
 
 StartProgress = false;
 enableSaving[false,false];
@@ -14,7 +14,7 @@ X_Server = false;
 X_Client = false;
 X_JIP = false;
 hitStateVar = false;
-versionName = "v2.9b";
+versionName = "v1.0 Alpha";
 
 if(isServer) then { X_Server = true;};
 if(!isDedicated) then { X_Client = true;};
@@ -57,4 +57,4 @@ if(X_Server) then {
 //init 3rd Party Scripts
 [] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "addons\proving_Ground\init.sqf";
-[0.1, 0.5, 0.5] execVM "addons\scripts\DynamicWeatherEffects.sqf";
+//[0.1, 0.5, 0.5] execVM "addons\scripts\DynamicWeatherEffects.sqf";

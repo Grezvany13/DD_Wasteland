@@ -76,7 +76,6 @@
 // Listbox styles 
 #define LB_TEXTURES 0x10 
 #define LB_MULTI 0x20 
-#define FontM "Zeppelin32"
 
 #define true 1
 #define false 1
@@ -88,7 +87,7 @@ class w_RscText {
 	style = ST_LEFT;
 	colorBackground[] = { 1 , 1 , 1 , 0 };
 	colorText[] = { 1 , 1 , 1 , 1 };
-	font = FontM;
+	font = "PuristaSemibold";
 	sizeEx = 0.025;
 	h = 0.25;
 	text = "";
@@ -103,7 +102,7 @@ class w_RscStructuredText
 	colorText[] = {0.8784,0.8471,0.651,1};
 	class Attributes
 	{
-		font = "Zeppelin32";
+		font = "PuristaSemibold";
 		color = "#e0d8a6";
 		align = "center";
 		shadow = 1;
@@ -126,7 +125,7 @@ class w_RscBackground
     idc               = -1;
     style             = ST_LEFT;
     colorText[]       = {1, 1, 1, 1};
-    font              = FontM;
+    font              = "PuristaSemibold";
     sizeEx            = 0.04;
 };
 
@@ -140,7 +139,7 @@ class w_RscEdit
     w = .2;
     h = .4;
     sizeEx = .02;
-    font = FontM;
+    font = "PuristaSemibold";
 
     text = "";
     colorText[] = {1,1,1,1};
@@ -159,17 +158,17 @@ class w_RscListBox
     h = 0.04;
     colorSelect[] = {1, 1, 1, 1};
     colorText[] = {1, 1, 1, 1};
-    colorBackground[] = {1,1,1,1};
+    colorBackground[] = {0,0,0,0};
     colorSelectBackground[] = {0.40, 0.43, 0.28, 0.5};
     colorScrollbar[] = {0.2, 0.2, 0.2, 1};
-    arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
-    arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
+    arrowEmpty = "client\ui\ui_arrow_combo_ca.paa";
+    arrowFull = "client\ui\ui_arrow_combo_active_ca.paa";
     wholeHeight = 0.45;
     rowHeight = 0.04;
     color[] = {0.7, 0.7, 0.7, 1};
     colorActive[] = {0,0,0,1};
     colorDisabled[] = {0,0,0,0.3};
-    font = "Zeppelin32";
+    font = "PuristaSemibold";
     sizeEx = 0.023;
     soundSelect[] = {"",0.1,1};
     soundExpand[] = {"",0.1,1};
@@ -184,10 +183,10 @@ class w_RscListBox
 		color[] = {1, 1, 1, 1};
         colorActive[] = {1, 1, 1, 1};
         colorDisabled[] = {1, 1, 1, 1};
-        thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
-        arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
-        arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
-        border = "\ca\ui\data\ui_border_scroll_ca.paa";
+        thumb = "client\ui\ui_scrollbar_thumb_ca.paa";
+        arrowFull = "client\ui\ui_arrow_top_active_ca.paa";
+        arrowEmpty = "client\ui\ui_arrow_top_ca.paa";
+        border = "client\ui\ui_border_scroll_ca.paa";
     };
 };
 
@@ -201,17 +200,17 @@ class w_Rsclist
         h = 0.04;
         colorSelect[] = {1, 1, 1, 1};
         colorText[] = {1, 1, 1, 1};
-        colorBackground[] = {1,1,1,1};
+        colorBackground[] = {0,0,0,0};
         colorSelectBackground[] = {0.40, 0.43, 0.28, 0.5};
         colorScrollbar[] = {0.2, 0.2, 0.2, 1};
-        arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
-        arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
+        arrowEmpty = "client\ui\ui_arrow_combo_ca.paa";
+        arrowFull = "client\ui\ui_arrow_combo_active_ca.paa";
         wholeHeight = 0.45;
         rowHeight = 0.04;
         color[] = {0.7, 0.7, 0.7, 1};
         colorActive[] = {0,0,0,1};
         colorDisabled[] = {0,0,0,0.3};
-        font = "Zeppelin32";
+        font = "PuristaSemibold";
         sizeEx = 0.023;
         soundSelect[] = {"",0.1,1};
         soundExpand[] = {"",0.1,1};
@@ -226,10 +225,10 @@ class w_Rsclist
                 color[] = {1, 1, 1, 1};
                 colorActive[] = {1, 1, 1, 1};
                 colorDisabled[] = {1, 1, 1, 1};
-                thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
-                arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
-                arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
-                border = "\ca\ui\data\ui_border_scroll_ca.paa";
+                thumb = "client\ui\ui_scrollbar_thumb_ca.paa";
+                arrowFull = "client\ui\ui_arrow_top_active_ca.paa";
+                arrowEmpty = "client\ui\ui_arrow_top_ca.paa";
+                border = "client\ui\ui_border_scroll_ca.paa";
         };
 };
 
@@ -240,7 +239,7 @@ class w_RscPicture
 	type = CT_STATIC;
 	style = ST_PICTURE;
 	
-	font = FontM;
+	font = "PuristaSemibold";
 	sizeEx = 0.023;
 	
 	colorBackground[] = {};
@@ -298,30 +297,30 @@ class w_RscButtonBase {
 		
 	};
 	
-	animTextureNormal = "\ca\ui\data\ui_button_normal_ca.paa";
-	animTextureDisabled = "\ca\ui\data\ui_button_disabled_ca.paa";
-	animTextureOver = "\ca\ui\data\ui_button_over_ca.paa";
-	animTextureFocused = "\ca\ui\data\ui_button_focus_ca.01.paa";
-	animTexturePressed = "\ca\ui\data\ui_button_down_ca.paa";
-	animTextureDefault = "\ca\ui\data\ui_button_default_ca.paa";
+	animTextureNormal = "client\ui\ui_button_normal_ca.paa";
+	animTextureDisabled = "client\ui\ui_button_disabled_ca.paa";
+	animTextureOver = "client\ui\ui_button_over_ca.paa";
+	animTextureFocused = "client\ui\ui_button_focus_ca.01.paa";
+	animTexturePressed = "client\ui\ui_button_down_ca.paa";
+	animTextureDefault = "client\ui\ui_button_default_ca.paa";
 	textureNoShortcut = "";
 	
 	period = 0.4;
-	font = "Zeppelin32";
+	font = "PuristaSemibold";
 	size = 0.023;
 	sizeEx = 0.023;
 	text = "";
 	
-	soundEnter[] = {"\ca\ui\data\sound\mouse2", 0.09, 1};
-	soundPush[] = {"\ca\ui\data\sound\new1", 0.09, 1};
-	soundClick[] = {"\ca\ui\data\sound\mouse3", 0.07, 1};
-	soundEscape[] = {"\ca\ui\data\sound\mouse1", 0.09, 1};
+	soundEnter[] = {"\A3\ui_f\data\Sound\MOUSE2", 0.09, 1};
+	soundPush[] = {"\A3\ui_f\data\Sound\NEW1", 0.09, 1};
+	soundClick[] = {"\A3\ui_f\data\Sound\MOUSE3", 0.07, 1};
+	soundEscape[] = {"\A3\ui_f\data\Sound\MOUSE1", 0.09, 1};
 	
 	action = "";
 	
 	class Attributes {
 	
-		font = "Zeppelin32";
+		font = "PuristaSemibold";
 		color = "#E5E5E5";
 		align = "left";
 		shadow = "true";
@@ -330,7 +329,7 @@ class w_RscButtonBase {
 	
 	class AttributesImage {
 	
-		font = "Zeppelin32";
+		font = "PuristaSemibold";
 		color = "#E5E5E5";
 		align = "left";
 		
@@ -376,17 +375,17 @@ class w_RscButton : w_RscButtonBase {
 		bottom = 0.005;
 	};
 	
-	animTextureNormal = "\ca\ui\data\igui_button_normal_ca.paa";
-	animTextureDisabled = "\ca\ui\data\igui_button_disabled_ca.paa";
-	animTextureOver = "\ca\ui\data\igui_button_over_ca.paa";
-	animTextureFocused = "\ca\ui\data\igui_button_focus_ca.paa";
-	animTexturePressed = "\ca\ui\data\igui_button_down_ca.paa";
-	animTextureDefault = "\ca\ui\data\igui_button_normal_ca.paa";
-	animTextureNoShortcut = "\ca\ui\data\igui_button_normal_ca.paa";
+	animTextureNormal = "client\ui\igui_button_normal_ca.paa";
+	animTextureDisabled = "client\ui\igui_button_disabled_ca.paa";
+	animTextureOver = "client\ui\igui_button_over_ca.paa";
+	animTextureFocused = "client\ui\igui_button_focus_ca.paa";
+	animTexturePressed = "client\ui\igui_button_down_ca.paa";
+	animTextureDefault = "client\ui\igui_button_normal_ca.paa";
+	animTextureNoShortcut = "client\ui\igui_button_normal_ca.paa";
 	
 	class Attributes {
 	
-		font = "Zeppelin32";
+		font = "PuristaSemibold";
 		color = "#E5E5E5";
 		align = "center";
 		shadow = "true";
@@ -401,7 +400,7 @@ class RscButton
     idc                       = -1;
     style                     = ST_CENTER;
     colorText[]               = {1, 1, 1, 1};
-    font                      = "Zeppelin32";
+    font                      = "";
     sizeEx                    = 0.025;
     soundPush[]               = {"", 0.2, 1};
     soundClick[]              = {"ui\ui_ok", 0.2, 1};
@@ -471,86 +470,20 @@ class w_RscCombo {
 			0.950000, 0.950000, 0.950000, 1
 	};
 	period = 1;
-	thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
-	arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
-	arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
-	border = "\ca\ui\data\ui_border_scroll_ca.paa";
+	thumb = "client\ui\ui_scrollbar_thumb_ca.paa";
+	arrowFull = "client\ui\ui_arrow_top_active_ca.paa";
+	arrowEmpty = "client\ui\ui_arrow_top_ca.paa";
+	border = "client\ui\ui_border_scroll_ca.paa";
 
 		class ScrollBar
 		{
 			color[] = {1, 1, 1, 1};
 			colorActive[] = {1, 1, 1, 1};
 			colorDisabled[] = {1, 1, 1, 1};
-			thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
-			arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
-			arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
-			border = "\ca\ui\data\ui_border_scroll_ca.paa";
+			thumb = "client\ui\ui_scrollbar_thumb_ca.paa";
+			arrowFull = "client\ui\data\ui_arrow_top_active_ca.paa";
+			arrowEmpty = "client\ui\data\ui_arrow_top_ca.paa";
+			border = "client\ui\ui_border_scroll_ca.paa";
 		};
 	
-};
-
-class w_RscHTML
-{
-	type = CT_HTML;
-	idc = -1;
-	style = 0;
-	filename = "";
-	colorBackground[] = {0, 0, 0, 0};
-	colorText[] = {1, 1, 1, 1};
-	colorBold[] = {0, 0, 0, 1};
-	colorLink[] = {0.05, 0.20, 0.05, 1};
-	colorLinkActive[] = {0, 0, 0.20, 1};
-	colorPicture[] = {1, 1, 1, 1};
-	colorPictureLink[] = {1, 1, 1, 1};
-	colorPictureSelected[] = {1, 1, 1, 1};
-	colorPictureBorder[] = {0, 0, 0, 0};
-	tooltipColorText[] = {0, 0, 0, 1};
-	tooltipColorBox[] = {0, 0, 0, 0.50};
-	tooltipColorShade[] = {1, 1, 0.70, 1};
-	align="left";
-
-	class H1
-	{
-		font = "Zeppelin32";
-		fontBold = "Zeppelin33";
-		sizeEx = 0.024740;
-	};
-	class H2
-	{
-		font = "Zeppelin32";
-		fontBold = "Zeppelin33";
-		sizeEx = 0.028646;
-	};
-	class H3
-	{
-		font = "Zeppelin32";
-		fontBold = "Zeppelin33";
-		sizeEx = 0.028646;
-	};
-	class H4
-	{
-		font = "Zeppelin33Italic";
-		fontBold = "Zeppelin33";
-		sizeEx = 0.020833;
-	};
-	class H5
-	{
-		font = "Zeppelin32";
-		fontBold = "Zeppelin33";
-		sizeEx = 0.020833;
-	};
-	class H6
-	{
-		font = "Zeppelin32";
-		fontBold = "Zeppelin33";
-		sizeEx = 0.020833;
-	};
-	class P
-	{
-		font = "Zeppelin32";
-		fontBold = "Zeppelin33";
-		sizeEx = 0.020833;
-	};
-	prevPage = "\ca\ui\data\arrow_left_ca.paa";
-	nextPage = "\ca\ui\data\arrow_right_ca.paa";
 };

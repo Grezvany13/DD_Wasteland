@@ -11,17 +11,17 @@ private ["_teamrules", "_teamicon", "_teamcol"];
 switch(str(side player)) do {
 	case "WEST": {
 		_teamrules = "STR_WL_YouAreInTeam";
-		_teamicon = "\ca\ui\data\igui_side_blufor_ca.paa";
+		_teamicon = "client\icons\igui_side_blufor_ca.paa";
 		_teamcol = "#3333ff";
 	};
 	case "EAST": {
 		_teamrules = "STR_WL_YouAreInTeam";
-		_teamicon = "\ca\ui\data\igui_side_opfor_ca.paa";
+		_teamicon = "client\icons\igui_side_opfor_ca.paa";
 		_teamcol = "#cc0000";
 	};
 	case "GUER": {
 		_teamrules = "STR_WL_YouAreInFFA";
-		_teamicon = "\ca\ui\data\igui_side_indep_ca.paa";
+		_teamicon = "client\icons\igui_side_indep_ca.paa";
 		_teamcol = "#00cc00";
 	};
 };

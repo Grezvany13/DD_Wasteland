@@ -72,8 +72,8 @@
 		soundCollapse[] = {"", 0.1, 1};
 		maxHistoryDelay = 1;
 
-		arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
-		arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
+		arrowEmpty = "";
+		arrowFull = "";
 		color[] = {0.1, 0.1, 0.1, 1};
 		colorActive[] = {0,0,0,1};
 		colorDisabled[] = {0,0,0,0.3};

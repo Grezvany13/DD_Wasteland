@@ -258,7 +258,7 @@ class balca_debug_veh_creator
 		y = safezoneY-border_offsetY-btn_height*3; h = display_height+border_offsetY*2+btn_height*4;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_gameoptions_background_ca.paa";
+		text = "";
 		font = "Zeppelin32";
 		sizeEx = 0.032;
 	};
@@ -290,7 +290,7 @@ class balca_debug_veh_creator
 		h = img_height;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_action_getingunner_ca.paa";
+		text = "";
 	};
 
 	class balca_VC_veh_info : balca_debug_text
@@ -451,7 +451,7 @@ class balca_debug_weap_creator
 		y = safezoneY-border_offsetY-btn_height*3; h = display_height+border_offsetY*2+btn_height*4;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_gameoptions_background_ca.paa";
+		text = "";
 		font = "Zeppelin32";
 		sizeEx = 0.032;
 	};
@@ -666,7 +666,7 @@ class balca_debug_console
 		y = safezoneY-border_offsetY; h = display_height+border_offsetY*2;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_gameoptions_background_ca.paa";
+		text = "";
 		font = "Zeppelin32";
 		sizeEx = 0.032;
 	};
@@ -791,7 +791,7 @@ class balca_target_display
 		y = safezoneY-border_offsetY-btn_height*3; h = display_height+border_offsetY*2+btn_height*4;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_gameoptions_background_ca.paa";
+		text = "";
 		font = "Zeppelin32";
 		sizeEx = 0.032;
 	};
@@ -825,7 +825,7 @@ class balca_target_display
 		h = img_height;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_action_getingunner_ca.paa";
+		text = "";
 	};
 
 	class balca_target_veh_info : balca_debug_text
@@ -1284,7 +1284,7 @@ class balca_sound_player
 		y = safezoneY-border_offsetY; h = display_height+border_offsetY*2+btn_height*1;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_gameoptions_background_ca.paa";
+		text = "";
 		font = "Zeppelin32";
 		sizeEx = 0.032;
 	};
@@ -1348,7 +1348,7 @@ class balca_statistics
 		y = safezoneY-border_offsetY; h = display_height+border_offsetY*2+btn_height*1;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_gameoptions_background_ca.paa";
+		text = "";
 		font = "Zeppelin32";
 		sizeEx = 0.032;
 	};
@@ -1419,7 +1419,7 @@ class balca_environment
 		y = safezoneY-border_offsetY; h = display_height+border_offsetY*2+btn_height*1;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_gameoptions_background_ca.paa";
+		text = "";
 		font = "Zeppelin32";
 		sizeEx = 0.032;
 	};
