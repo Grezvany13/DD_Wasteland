@@ -56,7 +56,7 @@ currentStaticHelis = []; // Storage for the heli marker numbers so that we don't
 civilianVehicles = ["c_offroad","B_Quadbike_F", "O_Quadbike_F"];
 
 //Military Vehicle List - Random Spawns
-militaryVehicles = ["c_offroad","O_Galkin_MG_F","B_Hunter_HMG_F"];
+militaryVehicles = ["c_offroad","O_Galkin_F","B_Hunter_F"];
 
 //Armed Military Vehicle List - Random Spawns
 armedMilitaryVehicles = ["O_Galkin_MG_F",
@@ -81,8 +81,7 @@ objectList = ["Land_Barrelwater_F",
 			"Land_Mound01_8m_F",
 			"Land_Mound02_8m_F",
 			"Land_Scaffolding_F",
-			"Land_Sack_F",
-			"Land_Razorwire_F",
+//			"Land_Razorwire_F", //isnt currently able to be picked up
 			"Land_HBarrierBig_F",
 			"Land_CargoBox_V1_F",
 			"RampConcrete",
@@ -96,24 +95,23 @@ staticHeliList = ["O_Ka60_Unarmed_F",
 					"B_MH9_F"];
 
 //Random Weapon List - Change this to what you want to spawn in cars.
-vehicleWeapons = ["hgun_P07_snds_F",
-				"hgun_P07_F",
-				"hgun_Rook40_snds_F",
-				"hgun_Rook40_F",
-				"srifle_EBR_ARCO_point_grip_F",
-                "srifle_EBR_Hamr_grip_F",
-                "arifle_Khaybar_GL_ACOg_point_mzls_F",
-                "LMG_Mk200_F",
-                "LMG_Mk200_ACO_grip_F",
-                "arifle_Khaybar_C_Holo_mzls_F",
+vehicleWeapons = ["arifle_SDAR_F",
+				"arifle_MXM_F",
+				"arifle_TRG21_F",
+				"arifle_TRG20_F",
+				"arifle_MXC_F",
+                "arifle_MX_SW_F",
+                "arifle_MX_GL_F",
+                "arifle_TRG21_GL_F",
+                "arifle_MX_F",
+                "arifle_Khaybar_F",
                 "arifle_Khaybar_C_F",
-                "arifle_Khaybar_C_ACO_point_F",
-                "arifle_MX_GL_ACO_point_F",
-                "arifle_MX_GL_Hamr_point_mzls_F",
-                "arifle_MXM_F",
-                "arifle_TRG20_Nstalker_point_mzls_F",
-                "arifle_TRG21_GL_ACO_point_F",
-				"arifle_MX_Hamr_point_grip_F"];
+                "arifle_Khaybar_GL_F",
+                "arifle_SDAR_F",
+                "srifle_EBR_F",
+                "LMG_Mk200_F",
+                "hgun_P07_F",
+                "hgun_Rook40_F"];
 
 vehicleAddition = [
 			"Zasleh2",

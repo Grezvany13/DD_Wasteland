@@ -44,6 +44,9 @@ if(str(playerSide) in ["EAST"]) then
 if(str(playerSide) in ["GUER"]) then
 {
     removeAllWeapons _player;
+	removeUniform _player;
+	_uniform = ["U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Commoner1_3","U_C_Commoner1_2"] call BIS_fnc_selectRandom;
+	_player addUniform _uniform;
     _player addMagazine "16Rnd_9x21_Mag";
     _player addMagazine "16Rnd_9x21_Mag";
 	_player addWeapon "hgun_P07_F";
